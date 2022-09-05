@@ -11,6 +11,7 @@ const footer = () => {
               className="underline text-[#d7dde4]"
               href="https://www.facebook.com/messiboat.score.3"
               target="_blank"
+              rel="noopener"
             >
               Teerapat Junchuen
             </a>{" "}
@@ -19,14 +20,16 @@ const footer = () => {
               className="underline text-[#d7dde4]"
               href="https://github.com/boatmessi02"
               target="_blank"
+              rel="noopener"
             >
               Github
             </a>{" "}
             Background Image by{" "}
-            {" "}<a
+            <a
               className="underline text-[#d7dde4]"
               href="https://www.freepik.com/"
               target="_blank"
+              rel="noopener"
             >
               fanjianhua / Freepik.
             </a>
