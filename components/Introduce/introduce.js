@@ -6,9 +6,34 @@ import { FaConnectdevelop } from "react-icons/fa";
 import { IoIosContract } from "react-icons/io";
 import { SiAboutdotme } from "react-icons/si";
 import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
+import Typewriter from "typewriter-effect";
+
 const introduce = (props) => {
   return (
-    <div className="flex flex-col h-fit gap-2 ">
+    <div className="flex flex-col h-fit gap-4">
+      <div
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+        className="flex p-[.5rem] h-[55px] rounded-md text-[white] text-center items-center justify-center"
+      >
+        <Typewriter
+          options={{
+            delay: 50,
+            loop: true,
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("สวัสดี ผมเป็นโปรแกรมเมอร์ที่ขยันและน่ารักครับ ):")
+              .pauseFor(1000)
+              .deleteAll()
+              .start();
+            typewriter
+              .typeString("I'm TJB, Full Stack Web Developer from Thailand.")
+              .pauseFor(5000)
+              .start();
+          }}
+        />
+      </div>
+
       <div className="flex items-center gap-4">
         <div className="flex w-[100px] ">
           <Image
@@ -43,7 +68,7 @@ const introduce = (props) => {
       </div>
 
       <div
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
         className="flex flex-col w-full h-full rounded-2xl p-[2rem] gap-4"
       >
         <div className="flex flex-col gap-5">

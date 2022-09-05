@@ -6,7 +6,7 @@ const experience = () => {
   return (
     <>
       <div
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
         className="w-full h-full p-[2rem] rounded-2xl"
       >
         <div className="flex flex-col items-center justify-center text-center gap-[2rem] text-white">

@@ -4,18 +4,38 @@ import Navbar from "../components/Navbar/navbar";
 import Introduce from "../components/Introduce/introduce";
 import Skill from "../components/Skill/skill";
 import Experience from "../components/Experience/experience";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Education from "../components/Education/education";
 import Footer from "../components/Footer/footer";
 
 export default function Home() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [checkPositionY, setCheckPositionY] = useState(false);
+  const handleScrollCheck = () => {
+    const positionY = window.pageYOffset;
+
+    setScrollPosition(positionY);
+    if (positionY > 900) {
+      setCheckPositionY(true);
+    } else {
+      setCheckPositionY(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollCheck);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollCheck);
+    };
+  }, []);
+
   const refBtnSkill = useRef();
   const refBtnIntroduce = useRef();
   const refBtnExperience = useRef();
   const refBtnEducation = useRef();
 
   const handleScroll = (ref) => {
-    console.log(ref, "refer")
+    console.log(ref, "refer");
     window.scrollTo({
       top: ref.offsetTop,
       left: 0,
@@ -39,7 +59,13 @@ export default function Home() {
           refBtnEducation={refBtnEducation}
           handleScroll={handleScroll}
         />
-        <div ref={refBtnIntroduce} className="lg:fixed w-full h-full lg:top-[10rem] lg:right-[10rem] flex justify-end lg:max-w-[400px] text-white" >
+        <div
+          ref={refBtnIntroduce}
+          className={`lg:fixed w-full h-full lg:right-[10rem] 
+          flex justify-end lg:max-w-[400px] text-white ${
+            checkPositionY && "lg:top-[4rem]"
+          }`}
+        >
           <Introduce />
         </div>
         <section className="containers " ref={refBtnSkill}>

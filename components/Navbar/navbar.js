@@ -16,7 +16,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <div className="flex md:justify-center justify-between items-center max-w-[1240px] mx-auto px-4 text-white">
+      <div className="flex lg:justify-center justify-between items-center max-w-[1240px] mx-auto px-4 text-white p-6">
         <motion.div
           whileHover={{ scale: 1.2 }}
           className="flex rounded-full items-center justify-between"
@@ -24,15 +24,16 @@ const Navbar = (props) => {
           <Image
             src="/images/logo.png"
             alt="Picture of the author"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
           />
         </motion.div>
-        <ul className="hidden md:flex ">
+        <ul className="hidden lg:flex ">
           <motion.li
             onClick={() => props.handleScroll(props.refBtnIntroduce.current)}
             whileHover={{ scale: 1.2 }}
-            className="flex w-[200px] h-[60px] md:ml-8 text-xl md:my-0 my-7 lg:my-0 bg-[#222] hover:bg-[#35DDE5] items-center gap-2 p-[2rem] justify-center rounded-2xl cursor-pointer"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+            className="flex w-[200px] h-[60px] lg:ml-8 text-xl my-7 lg:my-0 items-center gap-2 p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <FaHatWizard color="purple" size={20} />
             TEERAPAT
@@ -40,7 +41,8 @@ const Navbar = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnSkill.current)}
             whileHover={{ scale: 1.2 }}
-            className="flex w-[200px] h-[60px] md:ml-8 text-xl md:my-0 my-7 gap-2 lg:my-0 bg-[#222] hover:bg-[#35DDE5] items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+            className="flex w-[200px] h-[60px] lg:ml-8 text-xl lg:my-0 my-7 gap-2 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <DiCodeigniter color="red" size={20} />
             SKILL
@@ -48,7 +50,8 @@ const Navbar = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnEducation.current)}
             whileHover={{ scale: 1.2 }}
-            className="flex w-[200px] h-[60px] md:ml-8 text-xl md:my-0 my-7 gap-2 lg:my-0 bg-[#222] hover:bg-[#35DDE5] items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+            className="flex w-[200px] h-[60px] lg:ml-8 text-xl my-7 gap-2 lg:my-0 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <GiAgave color="green" size={20} />
             EXPERIENCE
@@ -56,7 +59,8 @@ const Navbar = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnEducation.current)}
             whileHover={{ scale: 1.2 }}
-            className="flex w-[200px] h-[60px] gap-2 md:ml-8 text-xl md:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+            className="flex w-[200px] h-[60px] gap-2 lg:ml-8 text-xl lg:my-0 my-7 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <MdOutlineCastForEducation color="blue" size={20} />
             EDUCATION
@@ -64,28 +68,28 @@ const Navbar = (props) => {
         </ul>
         <div
           onClick={handleMenu}
-          className="text-4xl cursor-pointer md:hidden block fixed top-0 right-0 p-[2rem] mt-4"
+          className="text-4xl cursor-pointer lg:hidden block fixed top-0 right-0 p-[2rem] mt-4"
         >
           {!menu ? <AiOutlineClose size={2} /> : <AiOutlineMenu size={30} />}
         </div>
         <ul
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
           className={
             !menu
-              ? "fixed right-0 top-0 w-fit h-full p-[1rem] border-r-gray-900 ease-in-out duration-500 md:hidden block"
+              ? "fixed right-0 top-0 w-fit h-full p-[1rem] border-r-gray-900 ease-in-out duration-500 lg:hidden block"
               : "fixed left-[-100%] "
           }
         >
           <div
             onClick={handleMenu}
-            className="text-4xl cursor-pointer block md:hidden"
+            className="text-4xl cursor-pointer block lg:hidden"
           >
             {!menu ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
           </div>
           <motion.li
             onClick={() => props.handleScroll(props.refBtnIntroduce.current)}
             whileHover={{ scale: 0.9 }}
-            className="flex w-[150px] h-[40px] gap-2 md:ml-8 ml-3 text-[18px] md:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
+            className="flex w-[150px] h-[40px] gap-2 lg:ml-8 ml-3 text-[18px] lg:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
           >
             <FaHatWizard color="purple" size={20} />
             TEERAPAT
@@ -94,7 +98,7 @@ const Navbar = (props) => {
             onClick={() => props.handleScroll(props.refBtnSkill.current)}
             onChange={() => handleMenu()}
             whileHover={{ scale: 0.9 }}
-            className="flex w-[150px] h-[40px] gap-2 md:ml-8 ml-3 text-[18px] md:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
+            className="flex w-[150px] h-[40px] gap-2 lg:ml-8 ml-3 text-[18px] lg:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
           >
             <DiCodeigniter color="red" size={20} />
             SKILL
@@ -102,7 +106,7 @@ const Navbar = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnExperience.current)}
             whileHover={{ scale: 0.9 }}
-            className="flex w-[150px] h-[40px] gap-2 md:ml-8 ml-3 text-[18px] md:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
+            className="flex w-[150px] h-[40px] gap-2 lg:ml-8 ml-3 text-[18px] lg:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
           >
             <GiAgave color="green" size={20} />
             EXPERIENCE
@@ -110,7 +114,7 @@ const Navbar = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnEducation.current)}
             whileHover={{ scale: 0.9 }}
-            className="flex w-[150px] h-[40px] gap-2 md:ml-8 ml-3 text-[18px] md:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
+            className="flex w-[150px] h-[40px] gap-2 lg:ml-8 ml-3 text-[18px] lg:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
           >
             <MdOutlineCastForEducation color="blue" size={20} />
             EDUCATION
