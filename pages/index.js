@@ -10,11 +10,12 @@ import Footer from "../components/Footer/footer";
 
 export default function Home() {
   const refBtnSkill = useRef();
-
+  const refBtnIntroduce = useRef();
   const refBtnExperience = useRef();
   const refBtnEducation = useRef();
 
   const handleScroll = (ref) => {
+    console.log(ref, "refer")
     window.scrollTo({
       top: ref.offsetTop,
       left: 0,
@@ -32,12 +33,13 @@ export default function Home() {
 
       <div className="sections relative">
         <Navbar
+          refBtnIntroduce={refBtnIntroduce}
           refBtnSkill={refBtnSkill}
           refBtnExperience={refBtnExperience}
           refBtnEducation={refBtnEducation}
           handleScroll={handleScroll}
         />
-        <div className="lg:fixed w-full h-full lg:top-[10rem] lg:right-[10rem] flex justify-end lg:max-w-[400px] text-white">
+        <div ref={refBtnIntroduce} className="lg:fixed w-full h-full lg:top-[10rem] lg:right-[10rem] flex justify-end lg:max-w-[400px] text-white" >
           <Introduce />
         </div>
         <section className="containers " ref={refBtnSkill}>

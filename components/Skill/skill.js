@@ -2,7 +2,7 @@ import React from "react";
 import { BsCodeSlash } from "react-icons/bs";
 import { SiCoderwall } from "react-icons/si";
 import { AiOutlineAntDesign } from "react-icons/ai";
-
+import { FaHatWizard } from "react-icons/fa";
 const skill = () => {
   return (
     <>
@@ -10,8 +10,12 @@ const skill = () => {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
         className="w-full h-full p-[2rem] rounded-2xl"
       >
-        <div className="flex flex-col items-center justify-center text-center gap-[50px] text-white">
-          <h1 className="text-4xl font-bold">SKILL</h1>
+        <div className="flex flex-col items-center justify-center text-center gap-[2rem] text-white">
+          <span className="flex gap-2 justify-center items-center">
+            <FaHatWizard color="purple" size={40} />
+            <h1 className="text-4xl font-bold">SKILL</h1>
+          </span>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[7rem]">
             <div className="flex flex-col gap-4 items-center">
               <BsCodeSlash color="#35DDE5" size={45} />
