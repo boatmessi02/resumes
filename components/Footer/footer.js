@@ -11,7 +11,7 @@ const footer = () => {
               className="underline text-[#d7dde4]"
               href="https://www.facebook.com/messiboat.score.3"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               Teerapat Junchuen
             </a>{" "}
@@ -20,7 +20,7 @@ const footer = () => {
               className="underline text-[#d7dde4]"
               href="https://github.com/boatmessi02"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               Github
             </a>{" "}
@@ -29,7 +29,7 @@ const footer = () => {
               className="underline text-[#d7dde4]"
               href="https://www.freepik.com/"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               fanjianhua / Freepik.
             </a>

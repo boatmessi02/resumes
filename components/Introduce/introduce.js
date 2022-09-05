@@ -68,28 +68,28 @@ const introduce = (props) => {
             <a
               href="https://www.facebook.com/messiboat.score.3"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               <BsFacebook className="hover:text-[#385898]" size={30} />
             </a>
             <a
               href="https://www.instagram.com/__tjbzonboat/"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               <BsInstagram className="hover:text-[#FA383E]" size={30} />
             </a>
             <a
               href="https://twitter.com/BoatMess"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               <BsTwitter className="hover:text-[#438eef]" size={30} />
             </a>
             <a
               href="https://github.com/boatmessi02"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer noopener"
             >
               <BsGithub className="hover:text-[#3ee4ce]" size={30} />
             </a>
