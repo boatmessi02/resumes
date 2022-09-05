@@ -80,7 +80,7 @@ const Navbar = (props) => {
             onClick={handleMenu}
             className="text-4xl cursor-pointer block md:hidden"
           >
-            {!menu ? <AiOutlineClose size={25} /> : null}
+            {!menu ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
           </div>
           <motion.li
             onClick={() => props.handleScroll(props.refBtnIntroduce.current)}
