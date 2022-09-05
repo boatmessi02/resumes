@@ -68,7 +68,7 @@ const experience = () => {
                 whileHover={{ scale: 0.9 }}
                 className="flex items-center w-[180px] rounded-md p-[1rem] bg-[#35DDE5]  h-[30px]"
               >
-                <button></button>
+                <button>
                   <a
                     href="https://buddytotravel-phi.vercel.app/login"
                     target="_blank"
