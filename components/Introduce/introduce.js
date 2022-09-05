@@ -13,7 +13,7 @@ const introduce = (props) => {
         <div className="flex w-[100px] ">
           <Image
             className="rounded-full"
-            src="/images/boat.png"
+            src="/images/mrBoat.jpg"
             alt="Picture of the author"
             width={500}
             height={500}
