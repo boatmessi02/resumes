@@ -4,7 +4,7 @@ import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = (props) => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
 
   const handleMenu = () => {
     setMenu(!menu);

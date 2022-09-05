@@ -4,8 +4,11 @@
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Rubik Moonrocks', cursive;
+  font-family: 'Source Serif Pro', serif;
   background: #222;
   width: auto;
 }
