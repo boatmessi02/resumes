@@ -21,20 +21,20 @@ const experience = () => {
             </span>
             <h1 className="font-bold text-xl ">2022 Create game random</h1>
             <span className="flex flex-col text-left">
-              <p>• It is a game created for interviewing interns.</p>
-              <p>• It's a game about random numbers.</p>
+              <p>{`• It is a game created for interviewing interns.`}</p>
+              <p>{`• It's a game about random numbers.`}</p>
             </span>
             <h1 className="font-bold text-xl ">
               2022 - 2023 Buddy To Travel Project
             </h1>
             <span className="flex flex-col text-left">
-              <p>• Is a website about community.</p>
+              <p>{`• Is a website about community.`}</p>
               <p>
-                • We created this project for the benefit of people who love to
-                hang out with people.
+                {`• We created this project for the benefit of people who love to
+                hang out with people.`}
               </p>
               <p>
-                • Now, we going to connect database and only have 2 months for this project.
+                {`• Now, we going to connect database and only have 2 months for this project.`}
               </p>
             </span>
           </div>

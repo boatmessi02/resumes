@@ -52,11 +52,11 @@ const introduce = (props) => {
             <SiAboutdotme color="#35DDE5" size={30} />
           </span>
           <p className="indent-[20px] ">
-            I'm boat or my name is Teerapat Junchuen. I'm 21 year old. I’m
+            {`I'm boat or my name is Teerapat Junchuen. I'm 21 year old. I’m
             studying at Bangkok University. I have a dream to work from home and
             make a lot of money from working coding. I'll create amazing things
             about what I like. I can work at any company if I get a job that I
-            love. Because that's how I row.
+            love. Because that's how I row.`}
           </p>
         </div>
         <div className="flex flex-col gap-5">
@@ -68,16 +68,29 @@ const introduce = (props) => {
             <a
               href="https://www.facebook.com/messiboat.score.3"
               target="_blank"
+              rel="noopener"
             >
               <BsFacebook className="hover:text-[#385898]" size={30} />
             </a>
-            <a href="https://www.instagram.com/__tjbzonboat/" target="_blank">
+            <a
+              href="https://www.instagram.com/__tjbzonboat/"
+              target="_blank"
+              rel="noopener"
+            >
               <BsInstagram className="hover:text-[#FA383E]" size={30} />
             </a>
-            <a href="https://twitter.com/BoatMess" target="_blank">
+            <a
+              href="https://twitter.com/BoatMess"
+              target="_blank"
+              rel="noopener"
+            >
               <BsTwitter className="hover:text-[#438eef]" size={30} />
             </a>
-            <a href="https://github.com/boatmessi02" target="_blank">
+            <a
+              href="https://github.com/boatmessi02"
+              target="_blank"
+              rel="noopener"
+            >
               <BsGithub className="hover:text-[#3ee4ce]" size={30} />
             </a>
           </span>

@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-const navbar = (props) => {
+const Navbar = (props) => {
   const [menu, setMenu] = useState(false);
 
   const handleMenu = () => {
     setMenu(!menu);
   };
+
   return (
     <>
       <div className="flex md:justify-center justify-between items-center max-w-[1240px] mx-auto px-4 text-white">
@@ -56,13 +57,13 @@ const navbar = (props) => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
           className={
             !menu
-              ? "fixed right-0 top-0 w-fit h-full border-r-gray-900 ease-in-out duration-500"
-              : "fixed left-[-100%]"
+              ? "fixed right-0 top-0 w-fit h-full border-r-gray-900 ease-in-out duration-500 md:hidden block"
+              : "fixed left-[-100%] "
           }
         >
           <div
             onClick={handleMenu}
-            className="text-4xl cursor-pointer md:hidden block "
+            className="text-4xl cursor-pointer block md:hidden"
           >
             {!menu ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
           </div>
@@ -94,4 +95,4 @@ const navbar = (props) => {
   );
 };
 
-export default navbar;
+export default Navbar;
