@@ -34,7 +34,7 @@ const experience = () => {
                 <p>{`• It is a game created for interviewing interns.`}</p>
                 <p>{`• It's a game about random numbers.`}</p>
               </span>
-              <motion.span
+              <motion.div
                 whileHover={{ scale: 0.9 }}
                 className="flex items-center w-[180px] rounded-md p-[1rem] bg-[#35DDE5]  h-[30px]"
               >
@@ -47,7 +47,7 @@ const experience = () => {
                     View Game Random
                   </a>
                 </button>
-              </motion.span>
+              </motion.div>
             </div>
 
             <div className="flex flex-col gap-4 items-center">
@@ -64,7 +64,7 @@ const experience = () => {
                   {`• Now, we going to connect database and only have 2 months for this project.`}
                 </p>
               </span>
-              <motion.span
+              <motion.div
                 whileHover={{ scale: 0.9 }}
                 className="flex items-center w-[180px] rounded-md p-[1rem] bg-[#35DDE5]  h-[30px]"
               >
@@ -77,7 +77,7 @@ const experience = () => {
                     View Project Buddy
                   </a>
                 </button>
-              </motion.span>
+              </motion.div>
             </div>
           </div>
         </div>
