@@ -66,7 +66,7 @@ const Navbar = (props) => {
           onClick={handleMenu}
           className="text-4xl cursor-pointer md:hidden block fixed top-0 right-0 p-[2rem] mt-4"
         >
-          {!menu ? null : <AiOutlineMenu size={30} />}
+          {!menu ? <AiOutlineClose size={2} /> : <AiOutlineMenu size={30} />}
         </div>
         <ul
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
