@@ -70,7 +70,7 @@ const experience = () => {
               >
                 <button>
                   <a
-                    href="https://buddytotravel-phi.vercel.app/login"
+                    href="https://buddytotravel.vercel.app/login"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
