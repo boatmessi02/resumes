@@ -28,7 +28,7 @@ const Navbar = (props) => {
             height={100}
           />
         </motion.div>
-        <ul className="hidden lg:flex ">
+        <ul className="hidden lg:flex font-bold">
           <motion.li
             onClick={() => props.handleScroll(props.refBtnIntroduce.current)}
             whileHover={{ scale: 1.2 }}
@@ -49,7 +49,7 @@ const Navbar = (props) => {
             SKILL
           </motion.li>
           <motion.li
-            onClick={() => props.handleScroll(props.refBtnEducation.current)}
+            onClick={() => props.handleScroll(props.refBtnExperience.current)}
             whileHover={{ scale: 1.2 }}
             style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
             className="flex w-[200px] h-[60px] lg:ml-8 text-md my-7 gap-2 lg:my-0 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
@@ -77,7 +77,7 @@ const Navbar = (props) => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
           className={
             !menu
-              ? "fixed right-0 top-0 w-fit h-full p-[1rem] border-r-gray-900 ease-in-out duration-500 lg:hidden block"
+              ? "fixed right-0 top-0 w-fit h-full p-[1rem] border-r-gray-900 ease-in-out duration-500 lg:hidden block font-bold"
               : "fixed left-[-100%] "
           }
         >
@@ -90,7 +90,7 @@ const Navbar = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnIntroduce.current)}
             whileHover={{ scale: 0.9 }}
-            className="flex w-[150px] h-[40px] gap-2 lg:ml-8 ml-3 text-[18px] lg:my-0 my-7 bg-[#222] hover:bg-[#35DDE5] items-center justify-center rounded-2xl cursor-pointer"
+            className="flex w-[150px] h-[40px] gap-2 lg:ml-8 ml-3 text-[18px] lg:my-0 my-7 bg-[#222] hover:bg-[#] items-center justify-center rounded-2xl cursor-pointer"
           >
             <FaHatWizard color="purple" size={20} />
             TEERAPAT

@@ -10,10 +10,10 @@ import Typewriter from "typewriter-effect";
 
 const introduce = (props) => {
   return (
-    <div className="flex flex-col h-fit gap-4">
+    <div className="flex flex-col h-fit gap-4 ">
       <div
         style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
-        className="flex p-[.5rem] h-[55px] rounded-md text-[white] text-center items-center justify-center"
+        className="flex p-[.5rem] h-[55px] rounded-md text-[white] text-center items-center justify-center text-[16px]"
       >
         <Typewriter
           options={{
@@ -73,11 +73,11 @@ const introduce = (props) => {
       >
         <div className="flex flex-col gap-5">
           <span className="flex items-center gap-2">
-            <h1 className="text-2xl text-[#35DDE5]">About</h1>
+            <h1 className="text-2xl text-[#35DDE5] font-bold">About</h1>
             <SiAboutdotme color="#35DDE5" size={30} />
           </span>
           <p className="indent-[20px] ">
-            {`I'm boat or my name is Teerapat Junchuen. I'm 21 year old. I’m
+            {`I'm boat or my name is Teerapat Junchuen. I'm 22 year old. I’m
             studying at Bangkok University. I have a dream to work from home and
             make a lot of money from working coding. I'll create amazing things
             about what I like. I can work at any company if I get a job that I
@@ -86,7 +86,7 @@ const introduce = (props) => {
         </div>
         <div className="flex flex-col gap-5">
           <span className="flex gap-2">
-            <h1 className="text-2xl text-[#35DDE5]">Contacts</h1>
+            <h1 className="text-2xl text-[#35DDE5] font-bold">Contacts</h1>
             <IoIosContract size={30} />
           </span>
           <span className="flex gap-10">

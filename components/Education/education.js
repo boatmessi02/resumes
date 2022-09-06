@@ -25,6 +25,7 @@ const education = () => {
             <div className="flex flex-col gap-4">
               <h1 className="font-bold text-xl ">2019-2023</h1>
               <span className="flex flex-col w-full text-left">
+                <p className="text-[#35DDE5] font-bold text-center">Present</p>
                 <p>• Bangkok University</p>
                 <p>
                   - Information Technology and Innovation (Computer Science)

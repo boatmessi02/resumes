@@ -23,10 +23,10 @@ const skill = () => {
               <span className="flex flex-col text-[#d7dde4] gap-4">
                 <p>• HTML</p>
                 <p>• CSS</p>
-                <p>• JavaScrip</p>
+                <p>• JavaScript</p>
                 <p>• React.js</p>
                 <p>• SASS / SCSS</p>
-                <p>• Framer Motion</p>
+                <p>• Tailwind CSS</p>
               </span>
             </div>
 

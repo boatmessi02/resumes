@@ -36,7 +36,7 @@ const experience = () => {
               </span>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] bg-[#222]  h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] bg-[#222] hover:bg-[#35DDE5] h-[30px]"
               >
                 <button>
                   <a
@@ -66,7 +66,7 @@ const experience = () => {
               </span>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] bg-[#222] h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] bg-[#222] hover:bg-[#35DDE5] h-[30px]"
               >
                 <button>
                   <a
