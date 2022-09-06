@@ -4,7 +4,7 @@ const footer = () => {
   return (
     <>
       <div className=" text-white p-[1rem]">
-        <span className="flex justify-center">
+        <span className="flex justify-center text-center">
           <p>
             Copyright Ⓒ Since 2022 by{" "}
             <a
