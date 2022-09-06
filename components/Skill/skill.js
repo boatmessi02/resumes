@@ -13,7 +13,7 @@ const skill = () => {
         <div className="flex flex-col items-center justify-center text-center gap-[2rem] text-white">
           <span className="flex gap-2 justify-center items-center">
             <DiCodeigniter color="red" size={40} />
-            <h1 className="text-4xl font-bold">SKILL</h1>
+            <h1 className="text-3xl">SKILL</h1>
           </span>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[5rem]">

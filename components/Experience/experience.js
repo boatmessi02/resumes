@@ -12,7 +12,7 @@ const experience = () => {
         <div className="flex flex-col items-center justify-center text-center gap-[2rem] text-white">
           <span className="flex gap-2 justify-center items-center">
             <GiAgave color="green" size={40} />
-            <h1 className="text-4xl font-bold">EXPERIENCE</h1>
+            <h1 className="text-3xl">EXPERIENCE</h1>
           </span>
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-4">
@@ -36,7 +36,7 @@ const experience = () => {
               </span>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-[180px] rounded-md p-[1rem] bg-[#35DDE5]  h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] bg-[#35DDE5]  h-[30px]"
               >
                 <button>
                   <a
@@ -66,7 +66,7 @@ const experience = () => {
               </span>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-[180px] rounded-md p-[1rem] bg-[#35DDE5]  h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] bg-[#35DDE5]  h-[30px]"
               >
                 <button>
                   <a

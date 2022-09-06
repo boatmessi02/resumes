@@ -4,12 +4,8 @@
 
 body {
   margin: 0;
-  font-family: 'Alfa Slab One', cursive;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Luckiest Guy', cursive;
-  font-family: 'Permanent Marker', cursive;
-  font-family: 'Rubik Moonrocks', cursive;
-  font-family: 'Source Serif Pro', serif;
+  padding: 0;
+  font-family: 'Tinos', serif;
   background: #222;
   width: auto;
 }
@@ -28,7 +24,7 @@ body {
 }
 
 .sections {
-  background-image: url('../public/images/rm378-02c.jpg');
+  background-image: url("../public/images/rm378-02c.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 16px;
@@ -40,4 +36,3 @@ body {
   margin: 0 auto;
   padding: 2rem 16px;
 }
-

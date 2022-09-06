@@ -11,7 +11,7 @@ const education = () => {
         <div className="flex flex-col items-center justify-center text-center gap-[2rem] text-white">
           <span className="flex gap-2 justify-center items-center">
             <MdOutlineCastForEducation color="blue" size={40} />
-            <h1 className="text-4xl font-bold">EDUCATION</h1>
+            <h1 className="text-3xl">EDUCATION</h1>
           </span>
 
           <div className="flex flex-col gap-5">

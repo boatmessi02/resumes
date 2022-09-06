@@ -15,7 +15,7 @@ export default function Home() {
     const positionY = window.pageYOffset;
 
     setScrollPosition(positionY);
-    if (positionY > 900) {
+    if (positionY > 950) {
       setCheckPositionY(true);
     } else {
       setCheckPositionY(false);
@@ -61,9 +61,9 @@ export default function Home() {
         />
         <div
           ref={refBtnIntroduce}
-          className={`lg:fixed w-full h-full lg:right-[10rem] 
+          className={`lg:fixed w-full h-fit lg:right-[10rem] 
           flex justify-end lg:max-w-[400px] text-white ${
-            checkPositionY && "lg:top-[4rem]"
+            checkPositionY && "lg:top-[5.5rem]"
           }`}
         >
           <Introduce />

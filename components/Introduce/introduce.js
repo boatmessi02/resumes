@@ -73,7 +73,7 @@ const introduce = (props) => {
       >
         <div className="flex flex-col gap-5">
           <span className="flex items-center gap-2">
-            <h1 className="text-2xl font-bold text-[#35DDE5]">About</h1>
+            <h1 className="text-2xl text-[#35DDE5]">About</h1>
             <SiAboutdotme color="#35DDE5" size={30} />
           </span>
           <p className="indent-[20px] ">
@@ -86,7 +86,7 @@ const introduce = (props) => {
         </div>
         <div className="flex flex-col gap-5">
           <span className="flex gap-2">
-            <h1 className="text-2xl font-bold text-[#35DDE5]">Contacts</h1>
+            <h1 className="text-2xl text-[#35DDE5]">Contacts</h1>
             <IoIosContract size={30} />
           </span>
           <span className="flex gap-10">

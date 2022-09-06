@@ -16,7 +16,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <div className="flex lg:justify-center justify-between items-center max-w-[1240px] mx-auto px-4 text-white p-6">
+      <div className="flex lg:justify-center justify-between items-center max-w-[1224px] mx-auto px-4 text-white p-6">
         <motion.div
           whileHover={{ scale: 1.2 }}
           className="flex rounded-full items-center justify-between"
@@ -33,7 +33,7 @@ const Navbar = (props) => {
             onClick={() => props.handleScroll(props.refBtnIntroduce.current)}
             whileHover={{ scale: 1.2 }}
             style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-            className="flex w-[200px] h-[60px] lg:ml-8 text-xl my-7 lg:my-0 items-center gap-2 p-[2rem] justify-center rounded-2xl cursor-pointer"
+            className="flex w-[200px] h-[60px] lg:ml-8 text-md my-7 lg:my-0 items-center gap-2 p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <FaHatWizard color="purple" size={20} />
             TEERAPAT
@@ -42,16 +42,17 @@ const Navbar = (props) => {
             onClick={() => props.handleScroll(props.refBtnSkill.current)}
             whileHover={{ scale: 1.2 }}
             style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-            className="flex w-[200px] h-[60px] lg:ml-8 text-xl lg:my-0 my-7 gap-2 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            className="flex w-[200px] h-[60px] lg:ml-8 text-md lg:my-0 my-7 gap-2 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <DiCodeigniter color="red" size={20} />
+            
             SKILL
           </motion.li>
           <motion.li
             onClick={() => props.handleScroll(props.refBtnEducation.current)}
             whileHover={{ scale: 1.2 }}
             style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-            className="flex w-[200px] h-[60px] lg:ml-8 text-xl my-7 gap-2 lg:my-0 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            className="flex w-[200px] h-[60px] lg:ml-8 text-md my-7 gap-2 lg:my-0 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <GiAgave color="green" size={20} />
             EXPERIENCE
@@ -60,7 +61,7 @@ const Navbar = (props) => {
             onClick={() => props.handleScroll(props.refBtnEducation.current)}
             whileHover={{ scale: 1.2 }}
             style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-            className="flex w-[200px] h-[60px] gap-2 lg:ml-8 text-xl lg:my-0 my-7 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            className="flex w-[200px] h-[60px] gap-2 lg:ml-8 text-md lg:my-0 my-7 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <MdOutlineCastForEducation color="blue" size={20} />
             EDUCATION
