@@ -1,9 +1,9 @@
 import Head from "next/head";
+import { useRef, useState, useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Introduce from "../components/Introduce/Introduce";
 import Skill from "../components/Skill/Skill";
 import Experience from "../components/Experience/Experience";
-import { useRef, useState, useEffect } from "react";
 import Education from "../components/Education/Education";
 import Footer from "../components/Footer/Footer";
 
