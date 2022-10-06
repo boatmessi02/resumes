@@ -1,11 +1,13 @@
 import Head from "next/head";
 import { useRef, useState, useEffect } from "react";
+
 import Navbar from "../components/Navbar/Navbar";
 import Introduce from "../components/Introduce/Introduce";
 import Skill from "../components/Skill/Skill";
 import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer/Footer";
 import Education from "../components/Education/Education";
+
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [checkPositionY, setCheckPositionY] = useState(false);
