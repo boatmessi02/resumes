@@ -89,7 +89,7 @@ const ModalMotion = (props) => {
           ))}
           <div className="font-bold text-2xl flex flex-col gap-5 items-center">
             <h1>Video Result Motion</h1>
-            <video width="800" height="540">
+            <video width="800" height="540" controls>
               <source src="./videos/2021-06-27.mp4/" type="video/mp4" />
             </video>
           </div>
