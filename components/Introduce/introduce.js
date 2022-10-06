@@ -8,7 +8,7 @@ import { SiAboutdotme } from "react-icons/si";
 import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 
-const introduce = (props) => {
+const Introduce = (props) => {
   return (
     <div className="flex flex-col h-fit gap-4 ">
       <div
@@ -125,4 +125,4 @@ const introduce = (props) => {
   );
 };
 
-export default introduce;
+export default Introduce;

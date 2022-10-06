@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineCastForEducation } from "react-icons/md";
 
-const education = () => {
+const Education = () => {
   return (
     <>
       <div
@@ -41,4 +41,4 @@ const education = () => {
   );
 };
 
-export default education;
+export default Education;

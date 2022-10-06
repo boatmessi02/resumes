@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { GiAgave } from "react-icons/gi";
 import ModalMotion from "./motion/ModalMotion";
 
-const experience = () => {
+const Experience = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -101,4 +101,4 @@ const experience = () => {
   );
 };
 
-export default experience;
+export default Experience;

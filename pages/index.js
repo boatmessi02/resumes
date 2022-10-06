@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../components/Navbar/navbar";
-import Introduce from "../components/Introduce/introduce";
-import Skill from "../components/Skill/skill";
-import Experience from "../components/Experience/experience";
+import Navbar from "../components/Navbar/Navbar";
+import Introduce from "../components/Introduce/Introduce";
+import Skill from "../components/Skill/Skill";
+import Experience from "../components/Experience/Experience";
 import { useRef, useState, useEffect } from "react";
-import Education from "../components/Education/education";
-import Footer from "../components/Footer/footer";
+import Education from "../components/Education/Education";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
