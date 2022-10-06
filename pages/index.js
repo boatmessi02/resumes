@@ -29,6 +29,8 @@ export default function Home() {
     };
   }, []);
 
+  console.log("gg")
+
   const refBtnSkill = useRef();
   const refBtnIntroduce = useRef();
   const refBtnExperience = useRef();
