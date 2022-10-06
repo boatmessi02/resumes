@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Navbar from "../components/Navbar/Navbar";
 import Introduce from "../components/Introduce/Introduce";
 import Skill from "../components/Skill/Skill";
