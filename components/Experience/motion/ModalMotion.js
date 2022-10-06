@@ -3,6 +3,8 @@ import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Player } from "video-react";
+import "video-react/dist/video-react.css";
 
 const style = {
   position: "absolute",
@@ -89,9 +91,13 @@ const ModalMotion = (props) => {
           ))}
           <div className="font-bold text-2xl flex flex-col gap-5 items-center">
             <h1>Video Result Motion</h1>
-            <video width="800" height="540" controls>
-              <source src="./videos/2021-06-27.mp4/" type="video/mp4" />
-            </video>
+            <div className="w-[340px] md:w-[800px]">
+              <Player
+                playsInline
+                poster="/images/motion/motion.jpg"
+                src="/videos/2021-06-27.mp4"
+              />
+            </div>
           </div>
         </div>
         <div className="flex gap-5 justify-end pt-[10px] border-t-[2px] border-dotted border-grey">
