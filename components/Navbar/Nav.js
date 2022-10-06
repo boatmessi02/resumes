@@ -7,7 +7,7 @@ import { DiCodeigniter } from "react-icons/di";
 import { GiAgave } from "react-icons/gi";
 import { MdOutlineCastForEducation } from "react-icons/md";
 
-const Navbars = (props) => {
+const Nav = (props) => {
   const [menu, setMenu] = useState(true);
 
   const handleMenu = () => {
@@ -125,4 +125,4 @@ const Navbars = (props) => {
   );
 };
 
-export default Navbars;
+export default Nav;

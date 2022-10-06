@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRef, useState, useEffect } from "react";
 import Educations from "../components/Education/Educations";
-import Navbar from "../components/Navbar/Navbar";
+import Nav from "../components/Navbar/Nav";
 import Footers from "../components/Footer/Footers";
 import Experiences from "../components/Experience/Experiences";
 import Introduces from "../components/Introduce/Introduces";
@@ -50,7 +50,7 @@ export default function Home() {
       </Head>
 
       <div className="sections relative">
-        <Navbar
+        <Nav
           refBtnIntroduce={refBtnIntroduce}
           refBtnSkill={refBtnSkill}
           refBtnExperience={refBtnExperience}
