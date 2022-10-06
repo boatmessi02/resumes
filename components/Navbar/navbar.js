@@ -7,7 +7,7 @@ import { DiCodeigniter } from "react-icons/di";
 import { GiAgave } from "react-icons/gi";
 import { MdOutlineCastForEducation } from "react-icons/md";
 
-const Navbar = (props) => {
+const Navbars = (props) => {
   const [menu, setMenu] = useState(true);
 
   const handleMenu = () => {
@@ -45,7 +45,6 @@ const Navbar = (props) => {
             className="flex w-[200px] h-[60px] lg:ml-8 text-md lg:my-0 my-7 gap-2 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
           >
             <DiCodeigniter color="red" size={20} />
-            
             SKILL
           </motion.li>
           <motion.li
@@ -126,4 +125,4 @@ const Navbar = (props) => {
   );
 };
 
-export default Navbar;
+export default Navbars;

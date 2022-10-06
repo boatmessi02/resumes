@@ -1,12 +1,11 @@
 import Head from "next/head";
 import { useRef, useState, useEffect } from "react";
-
+import Educations from "../components/Education/Educations";
 import Navbar from "../components/Navbar/Navbar";
-import Introduce from "../components/Introduce/Introduce";
-import Skill from "../components/Skill/Skill";
-import Experience from "../components/Experience/Experience";
-import Footer from "../components/Footer/Footer";
-import Education from "../components/Education/Education";
+import Footers from "../components/Footer/Footers";
+import Experiences from "../components/Experience/Experiences";
+import Introduces from "../components/Introduce/Introduces";
+import Skills from "../components/Skill/Skills";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,8 +27,6 @@ export default function Home() {
       window.removeEventListener("scroll", handleScrollCheck);
     };
   }, []);
-
-  console.log("gg")
 
   const refBtnSkill = useRef();
   const refBtnIntroduce = useRef();
@@ -67,12 +64,12 @@ export default function Home() {
             checkPositionY ? "lg:top-[3rem]" : "top-[8rem]"
           }`}
         >
-          <Introduce />
+          <Introduces />
         </div>
         <section className="containers " ref={refBtnSkill}>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 ">
             <div className="col-span-2">
-              <Skill />
+              <Skills />
             </div>
           </div>
         </section>
@@ -80,7 +77,7 @@ export default function Home() {
         <section className="containers " ref={refBtnExperience}>
           <div className="grid grid-cols-2 gap-10 lg:grid-cols-3 ">
             <div className="col-span-2">
-              <Experience />
+              <Experiences />
             </div>
           </div>
         </section>
@@ -88,11 +85,11 @@ export default function Home() {
         <section className="containers  " ref={refBtnEducation}>
           <div className="grid grid-cols-2 gap-10 lg:grid-cols-3 ">
             <div className="col-span-2">
-              <Education />
+              <Educations />
             </div>
           </div>
         </section>
-        <Footer />
+        <Footers />
       </div>
     </>
   );

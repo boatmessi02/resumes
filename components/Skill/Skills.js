@@ -3,7 +3,7 @@ import { BsCodeSlash } from "react-icons/bs";
 import { SiCoderwall } from "react-icons/si";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { DiCodeigniter } from "react-icons/di";
-const Skill = () => {
+const Skills = () => {
   return (
     <>
       <div
@@ -58,4 +58,4 @@ const Skill = () => {
   );
 };
 
-export default Skill;
+export default Skills;

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { GiAgave } from "react-icons/gi";
 import ModalMotion from "./motion/ModalMotion";
 
-const Experience = () => {
+const Experiences = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -72,7 +72,7 @@ const Experience = () => {
                 <p>{`• Is a website about community.`}</p>
                 <p>
                   {`• We created this project for the benefit of people who love to
-                hang out.`}
+                  hang out.`}
                 </p>
 
                 <p>
@@ -101,4 +101,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Experiences;

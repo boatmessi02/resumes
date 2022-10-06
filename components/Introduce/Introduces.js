@@ -8,7 +8,7 @@ import { SiAboutdotme } from "react-icons/si";
 import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 
-const Introduce = (props) => {
+const Introduces = () => {
   return (
     <div className="flex flex-col h-fit gap-4 ">
       <div
@@ -78,10 +78,10 @@ const Introduce = (props) => {
           </span>
           <p className="indent-[20px] ">
             {`I'm boat or my name is Teerapat Junchuen. I'm 22 year old. I’m
-            studying at Bangkok University. I have a dream to work from home and
-            make a lot of money from working coding. I'll create amazing things
-            about what I like. I can work at any company if I get a job that I
-            love. Because that's how I row.`}
+                studying at Bangkok University. I have a dream to work from home and
+                make a lot of money from working coding. I'll create amazing things
+                about what I like. I can work at any company if I get a job that I
+                love. Because that's how I row.`}
           </p>
         </div>
         <div className="flex flex-col gap-5">
@@ -125,4 +125,4 @@ const Introduce = (props) => {
   );
 };
 
-export default Introduce;
+export default Introduces;
