@@ -44,7 +44,7 @@ const introduce = (props) => {
             height={500}
           />
         </div>
-        <div className="flex">
+        <div className="flex gap-1">
           <div className="flex flex-col">
             <h1>Teerapat Junchuen</h1>
             <span className="flex gap-2 items-center ">
@@ -53,7 +53,7 @@ const introduce = (props) => {
             </span>
             <span className="flex gap-2 items-center ">
               <FaConnectdevelop />
-              <h1>Full Stack Developer</h1>
+              <h1>Font-End Developer</h1>
             </span>
           </div>
           <motion.div

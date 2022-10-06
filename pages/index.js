@@ -35,7 +35,6 @@ export default function Home() {
   const refBtnEducation = useRef();
 
   const handleScroll = (ref) => {
-    console.log(ref, "refer");
     window.scrollTo({
       top: ref.offsetTop,
       left: 0,

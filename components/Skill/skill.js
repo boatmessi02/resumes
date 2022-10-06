@@ -16,15 +16,16 @@ const skill = () => {
             <h1 className="text-3xl">SKILL</h1>
           </span>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[5rem]">
+          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-4">
             <div className="flex flex-col gap-4 items-center">
               <BsCodeSlash color="#35DDE5" size={45} />
               <h1 className="font-bold text-xl ]">Frontend Dev</h1>
               <span className="flex flex-col text-[#d7dde4] gap-4">
                 <p>• HTML</p>
                 <p>• CSS</p>
-                <p>• JavaScript</p>
+                <p>• JavaScript(ES6)</p>
                 <p>• React.js</p>
+                <p>• Redux</p>
                 <p>• SASS / SCSS</p>
                 <p>• Tailwind CSS</p>
               </span>
