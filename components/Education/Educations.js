@@ -15,7 +15,7 @@ const Educations = () => {
 
           <div className="flex flex-col gap-5 w-full">
             <div className="flex flex-col gap-4">
-              <h1 className="font-bold text-xl ">2013 - 2019</h1>
+              <h1 className="font-bold text-xl ">2013 - 2018</h1>
               <span className="flex flex-col w-full text-left">
                 <p>• Ratwinit Bangkaow school</p>
                 <p>- Calculation art</p>
