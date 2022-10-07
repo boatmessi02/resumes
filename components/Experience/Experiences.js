@@ -69,10 +69,11 @@ const Experiences = () => {
                 2022 - 2023 Buddy To Travel Project
               </h1>
               <span className="flex flex-col w-full text-left gap-2">
+                <p className="text-[#35DDE5] font-bold text-center">Present</p>
                 <p>{`• Is a website about community.`}</p>
                 <p>
                   {`• We created this project for the benefit of people who love to
-                  hang out.`}
+                  travel.`}
                 </p>
 
                 <p>

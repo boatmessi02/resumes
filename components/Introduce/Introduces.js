@@ -77,11 +77,10 @@ const Introduces = () => {
             <SiAboutdotme color="#35DDE5" size={30} />
           </span>
           <p className="indent-[20px] ">
-            {`I'm boat or my name is Teerapat Junchuen. I'm 22 year old. I’m
-                studying at Bangkok University. I have a dream to work from home and
-                make a lot of money from working coding. I'll create amazing things
-                about what I like. I can work at any company if I get a job that I
-                love. Because that's how I row.`}
+            {`I'm 22 year old. I'm seeking a suitable job position for utilize my skill and abilities 
+            and I have the flexibility to work. I want to be achieve professional growth while being resourceful.
+             I'm constantly search knowledge and I want to be successful with the organization as an active member,
+              Because that's how I role.`}
           </p>
         </div>
         <div className="flex flex-col gap-5">
