@@ -2,38 +2,56 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+
 import { FaHatWizard } from "react-icons/fa";
 import { DiCodeigniter } from "react-icons/di";
 import { GiAgave } from "react-icons/gi";
-import { MdOutlineCastForEducation } from "react-icons/md";
+import { MdOutlineCastForEducation, MdWorkspacesOutline } from "react-icons/md";
+import Link from "next/link";
 
 const Nav = (props) => {
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   const handleMenu = () => {
-    setMenu(!menu);
+    setMenu(true);
+    if (menu) {
+      setMenu(false);
+    }
   };
 
   return (
     <>
-      <div className="flex lg:justify-center justify-between items-center max-w-[1224px] mx-auto px-4 text-white p-6">
+      <div className="flex justify-between items-center max-w-[1240px] mx-auto text-white h-[90px]">
         <motion.div
-          whileHover={{ scale: 1.2 }}
-          className="flex rounded-full items-center justify-between"
+          whileHover={{ scale: 1.05 }}
+          className="flex rounded-full items-center gap-2 justify-between"
         >
           <Image
             src="/images/logo.png"
             alt="Picture of the author"
-            width={100}
-            height={100}
+            width={80}
+            height={80}
           />
+          <p className="textLogo">TEERAPATJ</p>
         </motion.div>
-        <ul className="hidden lg:flex font-bold">
+        <div className="md:hidden cursor-pointer p-4 fixed top-[10px] right-0" onClick={handleMenu}>
+          {!menu ? (
+            <AiOutlineMenu
+              size={30}
+              className="text-[#fff] font-bold "
+            />
+          ) : (
+            <AiOutlineClose
+              size={30}
+              className="text-[#fff] font-bold"
+            />
+          )}
+        </div>
+        <ul className={!menu ? "hidden lg:flex font-bold gap-10": "menuResponsive flex flex-col fixed top-[70px] right-2 p-4 gap-4 items-start bg-[#222] z-[99]"}>
           <motion.li
             onClick={() => props.handleScroll(props.refBtnIntroduce.current)}
             whileHover={{ scale: 1.2 }}
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-            className="flex w-[200px] h-[60px] lg:ml-8 text-md my-7 lg:my-0 items-center gap-2 p-[2rem] justify-center rounded-2xl cursor-pointer"
+            className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <FaHatWizard color="purple" size={20} />
             TEERAPAT
@@ -41,8 +59,7 @@ const Nav = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnSkill.current)}
             whileHover={{ scale: 1.2 }}
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-            className="flex w-[200px] h-[60px] lg:ml-8 text-md lg:my-0 my-7 gap-2 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <DiCodeigniter color="red" size={20} />
             SKILL
@@ -50,8 +67,7 @@ const Nav = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnExperience.current)}
             whileHover={{ scale: 1.2 }}
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-            className="flex w-[200px] h-[60px] lg:ml-8 text-md my-7 gap-2 lg:my-0 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <GiAgave color="green" size={20} />
             EXPERIENCE
@@ -59,14 +75,22 @@ const Nav = (props) => {
           <motion.li
             onClick={() => props.handleScroll(props.refBtnEducation.current)}
             whileHover={{ scale: 1.2 }}
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-            className="flex w-[200px] h-[60px] gap-2 lg:ml-8 text-md lg:my-0 my-7 items-center p-[2rem] justify-center rounded-2xl cursor-pointer"
+            className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <MdOutlineCastForEducation color="blue" size={20} />
             EDUCATION
           </motion.li>
+          <motion.li whileHover={{ scale: 1.2 }}>
+            <Link href="/work">
+              <div className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer">
+                <MdWorkspacesOutline color="pink" size={20} />
+                WORK
+              </div>
+            </Link>
+          </motion.li>
         </ul>
-        <div
+
+        {/* <div
           onClick={handleMenu}
           className="text-4xl cursor-pointer lg:hidden block fixed top-0 right-0 p-[2rem] mt-4"
         >
@@ -119,7 +143,7 @@ const Nav = (props) => {
             <MdOutlineCastForEducation color="blue" size={20} />
             EDUCATION
           </motion.li>
-        </ul>
+        </ul> */}
       </div>
     </>
   );

@@ -74,7 +74,7 @@ const ModalMotion = (props) => {
       <Box
         style={{ padding: "20px" }}
         sx={style}
-        className="scrollModal flex flex-col w-full max-w-[1024px] h-[600px] bg-[#222] text-white text-center gap-[2rem] rounded-lg"
+        className="scrollModal flex flex-col w-full max-w-[1024px] md:max-w-[1024] h-[600px] bg-[#222] text-white text-center gap-[2rem] rounded-lg"
       >
         <div style={{ fontSize: "18px" }}>
           <h1 className="font-bold text-4xl">Motion Detection Work</h1>
@@ -85,7 +85,7 @@ const ModalMotion = (props) => {
               key={index}
               className="font-bold text-2xl flex flex-col gap-5 items-center"
             >
-              <h1>{items.title}</h1>
+              <h1 className="border-4 border-sky-500 p-2">{items.title}</h1>
               <Image src={items.src} alt={index} width={800} height={500} />
             </div>
           ))}

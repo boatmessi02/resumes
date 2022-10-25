@@ -69,7 +69,7 @@ const Introduces = () => {
 
       <div
         style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
-        className="flex flex-col w-full h-full rounded-2xl p-[2rem] gap-4"
+        className="flex flex-col w-full h-full rounded-2xl p-[1.2rem] gap-4"
       >
         <div className="flex flex-col gap-5">
           <span className="flex items-center gap-2">

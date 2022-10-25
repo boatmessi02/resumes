@@ -10,6 +10,7 @@ import Skills from "../components/Skill/Skills";
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [checkPositionY, setCheckPositionY] = useState(false);
+
   const handleScrollCheck = () => {
     const positionY = window.pageYOffset;
 
@@ -22,7 +23,6 @@ export default function Home() {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScrollCheck);
-
     return () => {
       window.removeEventListener("scroll", handleScrollCheck);
     };
@@ -49,7 +49,7 @@ export default function Home() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <div className="sections relative">
+      <div className="sections relative w-full">
         <Nav
           refBtnIntroduce={refBtnIntroduce}
           refBtnSkill={refBtnSkill}
@@ -59,14 +59,14 @@ export default function Home() {
         />
         <div
           ref={refBtnIntroduce}
-          className={`lg:fixed w-full h-fit lg:right-[10rem] 
+          className={`px-3 py-5 lg:fixed w-full h-fit lg:right-[8rem] 
           flex justify-end lg:max-w-[400px] text-white ${
-            checkPositionY ? "lg:top-[3rem]" : "top-[8rem]"
+            checkPositionY ? "lg:top-[2rem]" : "top-[5rem]"
           }`}
         >
           <Introduces />
         </div>
-        <section className="containers " ref={refBtnSkill}>
+        <section className={"containers "} ref={refBtnSkill}>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 ">
             <div className="col-span-2">
               <Skills />

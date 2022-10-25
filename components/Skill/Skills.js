@@ -16,39 +16,50 @@ const Skills = () => {
             <h1 className="text-3xl">SKILL</h1>
           </span>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-4">
-            <div className="flex flex-col gap-4 items-center">
-              <BsCodeSlash color="#35DDE5" size={45} />
-              <h1 className="font-bold text-xl ]">Frontend Dev</h1>
-              <span className="flex flex-col text-[#d7dde4] gap-4">
-                <p>• HTML</p>
-                <p>• CSS</p>
-                <p>• JavaScript(ES6)</p>
-                <p>• React.js</p>
-                <p>• Redux</p>
-                <p>• SASS / SCSS</p>
-                <p>• Tailwind CSS</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-8 md:gap-4 py-2">
+            <div className="flex gap-5 items-center md:flex-col">
+              <span className="flex flex-col gap-2 items-center md:flex w-[120px]">
+                <BsCodeSlash color="#35DDE5" size={45} />
+                <h1 className="font-bold text-xl ]">Frontend Dev</h1>
               </span>
+
+              <div className="flex flex-col w-[170px] text-left text-[#d7dde4] gap-4 pl-2">
+                <p className="border-l-4 border-sky-500 px-4"> HTML</p>
+                <p className="border-l-4 border-sky-500 px-4"> CSS</p>
+                <p className="border-l-4 border-sky-500 px-4">
+                  JavaScript(ES6)
+                </p>
+                <p className="border-l-4 border-sky-500 px-4"> React.js</p>
+                <p className="border-l-4 border-sky-500 px-4"> Redux</p>
+                <p className="border-l-4 border-sky-500 px-4"> SASS / SCSS</p>
+                <p className="border-l-4 border-sky-500 px-4"> Tailwind CSS</p>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-4 items-center">
-              <SiCoderwall color="#35DDE5" size={40} />
-              <h1 className="font-bold text-xl ">Backend Dev</h1>
-              <span className="flex flex-col text-[#d7dde4] gap-4">
-                <p>• Nodejs</p>
-                <p>• Next.js</p>
-                <p>• MySQL</p>
-                <p>• Firebase</p>
-                <p>• Python</p>
+            <div className="flex gap-5 items-center md:flex-col">
+              <span className="flex flex-col gap-2 items-center md:flex w-[120px]">
+                <SiCoderwall color="#35DDE5" size={40} />
+                <h1 className="font-bold text-xl ">Backend Dev</h1>
+              </span>
+
+              <span className="flex flex-col w-[170px] text-left text-[#d7dde4] gap-4">
+                <p className="border-l-4 border-sky-500 px-4"> Nodejs</p>
+                <p className="border-l-4 border-sky-500 px-4"> Next.js</p>
+                <p className="border-l-4 border-sky-500 px-4"> MySQL</p>
+                <p className="border-l-4 border-sky-500 px-4"> Firebase</p>
+                <p className="border-l-4 border-sky-500 px-4"> Python</p>
               </span>
             </div>
-            <div className="flex flex-col gap-4 items-center">
-              <AiOutlineAntDesign color="#35DDE5" size={45} />
-              <h1 className="font-bold text-xl ">Designer</h1>
-              <span className="flex flex-col text-[#d7dde4] gap-4">
-                <p>• Photoshop</p>
-                <p>• Figma</p>
-                <p>• Canva</p>
+            <div className="flex gap-5 items-center md:flex-col">
+              <span className="flex flex-col gap-2 items-center md:flex w-[120px]">
+                <AiOutlineAntDesign color="#35DDE5" size={45} />
+                <h1 className="font-bold text-xl ">Designer</h1>
+              </span>
+
+              <span className="flex flex-col w-[170px] text-left text-[#d7dde4] mt-6 gap-4 ">
+                <p className="border-l-4 border-sky-500 px-4"> Photoshop</p>
+                <p className="border-l-4 border-sky-500 px-4"> Figma</p>
+                <p className="border-l-4 border-sky-500 px-4"> Canva</p>
               </span>
             </div>
           </div>

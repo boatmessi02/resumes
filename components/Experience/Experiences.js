@@ -24,35 +24,38 @@ const Experiences = () => {
             <h1 className="text-3xl">EXPERIENCE</h1>
           </span>
           <div className="flex flex-col gap-6 w-full">
-            <div className="flex flex-col gap-4 items-center">
-              <h1 className="font-bold text-xl ">
+            <div className="flex flex-col gap-4 items-center border-2 p-6">
+              <h1 className="font-bold text-xl border-4 border-gray-500 p-2">
                 2021 Smart IOT (Smart School Bus)
               </h1>
-              <span className="flex flex-col text-left gap-2 w-full">
-                <p>
-                  • BU-MIT (Bangkok University Multimedia Intelligent
-                  Technology)
+              <span className="flex flex-col text-left w-full gap-2 px-4 ">
+                <p className="border-l-4 border-sky-500 pl-2">
+                  BU-MIT (Bangkok University Multimedia Intelligent Technology)
                 </p>
-                <p>• LAB (Motion Detection)</p>
+                <p className="border-l-4 border-sky-500 pl-2">
+                  LAB (Motion Detection)
+                </p>
               </span>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] bg-[#222] cursor-pointer hover:bg-[#35DDE5] h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[30px]"
                 onClick={handleOpenModal}
               >
                 View Motion Detection
               </motion.div>
             </div>
 
-            <div className="flex flex-col gap-4 items-center">
-              <h1 className="font-bold text-xl ">2022 Create game random</h1>
-              <span className="flex flex-col text-left w-full gap-2">
-                <p>{`• It is a game created for internship interview.`}</p>
-                <p>{`• It's a game about random numbers.`}</p>
+            <div className="flex flex-col gap-4 items-center border-2 p-6">
+              <h1 className="font-bold text-xl border-4 border-gray-500 p-2">
+                2022 Create game random
+              </h1>
+              <span className="flex flex-col text-left w-full gap-2 px-4 ">
+                <p className="border-l-4 border-sky-500 pl-2">{`It is a game created for internship interview.`}</p>
+                <p className="border-l-4 border-sky-500 pl-2">{`It's a game about random numbers.`}</p>
               </span>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] bg-[#222] hover:bg-[#35DDE5] h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[30px]"
               >
                 <a
                   href="https://random-game-9kcszqbqr-boatmessi02.vercel.app/"
@@ -64,26 +67,27 @@ const Experiences = () => {
               </motion.div>
             </div>
 
-            <div className="flex flex-col gap-4 items-center">
-              <h1 className="font-bold text-xl ">
+            <div className="flex flex-col gap-4 items-center border-2 p-6">
+              <h1 className="font-bold text-xl border-4 border-gray-500 p-2 ">
                 2022 - 2023 Buddy To Travel Project
               </h1>
-              <span className="flex flex-col w-full text-left gap-2">
-                <p className="text-[#35DDE5] font-bold text-center">Present</p>
-                <p>{`• Is a website about community.`}</p>
-                <p>
-                  {`• We created this project for the benefit of people who love to
+              <p className="text-[#35DDE5] font-bold text-center">Present</p>
+
+              <span className="flex flex-col w-full text-left gap-2 px-4">
+                <p className="border-l-4 border-sky-500 pl-2">{`Is a website about community.`}</p>
+                <p className="border-l-4 border-sky-500 pl-2">
+                  {`We created this project for the benefit of people who love to
                   travel.`}
                 </p>
 
-                <p>
-                  {`• Now, We already to connect to database and finished all function just only left group chat function.`}
+                <p className="border-l-4 border-sky-500 pl-2">
+                  {`Now, We already to connect to database and finished all function just only left group chat function.`}
                 </p>
-                <p>{`• We'll definitely be launching in 2023.`}</p>
+                <p className="border-l-4 border-sky-500 pl-2">{`We'll definitely be launching in 2023.`}</p>
               </span>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] bg-[#222] hover:bg-[#35DDE5] h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[30px]"
               >
                 <a
                   href="https://buddytotravel.vercel.app/login"
