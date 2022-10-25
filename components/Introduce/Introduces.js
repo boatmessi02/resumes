@@ -60,7 +60,7 @@ const Introduces = () => {
             whileTap={{ scale: 0.9 }}
             className="flex bg-[#35DDE5] hover:bg-[#222] rounded-xl w-[100px] h-[50px] items-center justify-center cursor-pointer"
           >
-            <a href="/images/Resume.pdf" target="_blank">
+            <a href="/images/resume.pdf" target="_blank">
               Resume
             </a>
           </motion.div>
