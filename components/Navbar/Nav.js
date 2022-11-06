@@ -22,32 +22,38 @@ const Nav = (props) => {
   return (
     <>
       <div className="flex justify-between items-center max-w-[1240px] mx-auto text-white h-[90px]">
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="flex rounded-full items-center gap-2 justify-between"
+        <Link href="/">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="flex rounded-full items-center gap-2 justify-between cursor-pointer"
+          >
+            <Image
+              src="/images/logo.png"
+              alt="Picture of the author"
+              width={80}
+              height={80}
+            />
+            <p className="textLogo">TEERAPATJ</p>
+          </motion.div>
+        </Link>
+
+        <div
+          className="md:hidden cursor-pointer p-4 fixed top-[10px] right-0"
+          onClick={handleMenu}
         >
-          <Image
-            src="/images/logo.png"
-            alt="Picture of the author"
-            width={80}
-            height={80}
-          />
-          <p className="textLogo">TEERAPATJ</p>
-        </motion.div>
-        <div className="md:hidden cursor-pointer p-4 fixed top-[10px] right-0" onClick={handleMenu}>
           {!menu ? (
-            <AiOutlineMenu
-              size={30}
-              className="text-[#fff] font-bold "
-            />
+            <AiOutlineMenu size={30} className="text-[#fff] font-bold " />
           ) : (
-            <AiOutlineClose
-              size={30}
-              className="text-[#fff] font-bold"
-            />
+            <AiOutlineClose size={30} className="text-[#fff] font-bold" />
           )}
         </div>
-        <ul className={!menu ? "hidden lg:flex font-bold gap-10": "menuResponsive flex flex-col fixed top-[70px] right-2 p-4 gap-4 items-start bg-[#222] z-[99]"}>
+        <ul
+          className={
+            !menu
+              ? "hidden lg:flex font-bold gap-10"
+              : "menuResponsive flex flex-col fixed top-[70px] right-2 p-4 gap-4 items-start bg-[#222] z-[99]"
+          }
+        >
           <motion.li
             onClick={() => props.handleScroll(props.refBtnIntroduce.current)}
             whileHover={{ scale: 1.2 }}

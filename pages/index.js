@@ -66,7 +66,7 @@ export default function Home() {
         >
           <Introduces />
         </div>
-        <section className={"containers "} ref={refBtnSkill}>
+        <section className="containers" ref={refBtnSkill}>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 ">
             <div className="col-span-2">
               <Skills />
