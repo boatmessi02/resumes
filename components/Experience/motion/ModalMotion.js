@@ -74,7 +74,7 @@ const ModalMotion = (props) => {
       <Box
         style={{ padding: "20px" }}
         sx={style}
-        className="scrollModal flex flex-col w-full max-w-[1024px] md:max-w-[1024] h-[600px] bg-[#222] text-white text-center gap-[2rem] rounded-lg"
+        className="scrollModal flex flex-col w-[380px] md:w-full max-w-[1024px]  h-[600px] bg-[#222] text-white text-center gap-[2rem] rounded-lg"
       >
         <div style={{ fontSize: "18px" }}>
           <h1 className="font-bold text-4xl">Motion Detection Work</h1>

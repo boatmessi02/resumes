@@ -71,15 +71,16 @@ const ModalOpenHouse = (props) => {
       disableAutoFocus
     >
       <Box
-        style={{ padding: "20px" }}
         sx={style}
-        className="scrollModal flex flex-col w-full max-w-[1024px] md:max-w-[1024] h-[600px] text-white text-center gap-[6rem] rounded-lg"
+        className="scrollModal flex p-[30px] flex-col w-[380px] md:w-full max-w-[1024px] h-[600px] text-white text-center gap-[3rem] md:gap-[5rem] rounded-lg"
       >
         <div
           style={{ fontSize: "18px" }}
           className="border-2 border-[#35DDE5] p-2"
         >
-          <h1 className="font-bold text-4xl">Open house Bangkok University</h1>
+          <h1 className="font-bold text-md md:text-4xl">
+            Open house Bangkok University
+          </h1>
         </div>
         <div className="boxSlide">
           <div className="wrapperElements">
