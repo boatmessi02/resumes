@@ -21,7 +21,7 @@ const Nav = (props) => {
 
   return (
     <>
-      <div className="flex justify-between items-center max-w-[1240px] mx-auto text-white h-[90px]">
+      <div className="flex justify-between items-center max-w-[1240px] mx-auto px-5 text-white h-[90px]">
         <Link href="/">
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -51,7 +51,7 @@ const Nav = (props) => {
           className={
             !menu
               ? "hidden lg:flex font-bold gap-10"
-              : "menuResponsive flex flex-col fixed top-[70px] right-2 p-4 gap-4 items-start bg-[#222] z-[99]"
+              : "menuResponsive flex flex-col fixed top-[70px] right-2 p-7 gap-4 items-start bg-[#222] z-[99]"
           }
         >
           <motion.li
