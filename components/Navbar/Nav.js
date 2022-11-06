@@ -38,7 +38,7 @@ const Nav = (props) => {
         </Link>
 
         <div
-          className="md:hidden cursor-pointer p-4 fixed top-[10px] right-0"
+          className="lg:hidden cursor-pointer p-4 fixed top-[10px] right-0"
           onClick={handleMenu}
         >
           {!menu ? (

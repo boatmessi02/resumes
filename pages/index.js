@@ -59,15 +59,15 @@ export default function Home() {
         />
         <div
           ref={refBtnIntroduce}
-          className={`px-3 py-5 lg:fixed w-full h-fit lg:right-[8rem] 
-          flex justify-end lg:max-w-[400px] text-white ${
-            checkPositionY ? "lg:top-[2rem]" : "top-[5rem]"
+          className={`px-3 py-5 xl:fixed w-full h-fit xl:right-[8rem] 
+          flex justify-end xl:max-w-[400px] text-white ${
+            checkPositionY ? "xl:top-[2rem]" : "top-[5rem]"
           }`}
         >
           <Introduces />
         </div>
         <section className="containers" ref={refBtnSkill}>
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 ">
+          <div className="grid grid-cols-1 gap-10 xl:grid-cols-3 ">
             <div className="col-span-2">
               <Skills />
             </div>
@@ -75,7 +75,7 @@ export default function Home() {
         </section>
 
         <section className="containers " ref={refBtnExperience}>
-          <div className="grid grid-cols-2 gap-10 lg:grid-cols-3 ">
+          <div className="grid grid-cols-2 gap-10 xl:grid-cols-3 ">
             <div className="col-span-2">
               <Experiences />
             </div>
@@ -83,7 +83,7 @@ export default function Home() {
         </section>
 
         <section className="containers  " ref={refBtnEducation}>
-          <div className="grid grid-cols-2 gap-10 lg:grid-cols-3 ">
+          <div className="grid grid-cols-2 gap-10 xl:grid-cols-3 ">
             <div className="col-span-2">
               <Educations />
             </div>
