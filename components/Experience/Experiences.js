@@ -74,16 +74,14 @@ const Experiences = () => {
               <p className="text-[#35DDE5] font-bold text-center">Present</p>
 
               <span className="flex flex-col w-full text-left gap-2 px-4">
-                <p className="border-l-4 border-sky-500 pl-2">{`Is a website about community.`}</p>
+                <p className="border-l-4 border-sky-500 pl-2">{`Website community.`}</p>
                 <p className="border-l-4 border-sky-500 pl-2">
-                  {`We created this project for the benefit of people who love to
-                  travel.`}
+                  {`We are created this project for the benefit of people who love to
+                  travel and make friends.`}
                 </p>
-
-                <p className="border-l-4 border-sky-500 pl-2">
-                  {`Now, We already to connect to database and finished all function just only left group chat function.`}
-                </p>
-                <p className="border-l-4 border-sky-500 pl-2">{`We'll definitely be launching in 2023.`}</p>
+                
+                <p className="border-l-4 border-sky-500 pl-2">{`We have already launched.`}</p>
+                <p className="border-l-4 border-sky-500 pl-2">{`We hope you like this journey.`}</p>
               </span>
               <motion.div
                 whileHover={{ scale: 0.9 }}
