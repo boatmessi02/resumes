@@ -77,9 +77,9 @@ const Experiences = () => {
                 <p className="border-l-4 border-sky-500 pl-2">{`Website community.`}</p>
                 <p className="border-l-4 border-sky-500 pl-2">
                   {`We are created this project for the benefit of people who love to
-                  travel and make friends.`}
+                  travel and make some friends.`}
                 </p>
-                
+
                 <p className="border-l-4 border-sky-500 pl-2">{`We have already launched.`}</p>
                 <p className="border-l-4 border-sky-500 pl-2">{`We hope you like this journey.`}</p>
               </span>
