@@ -22,6 +22,7 @@ export default function Home() {
     }
   };
   useEffect(() => {
+    window.addEventListener("scroll", reveal);
     window.addEventListener("scroll", handleScrollCheck);
     return () => {
       window.removeEventListener("scroll", handleScrollCheck);
@@ -56,8 +57,6 @@ export default function Home() {
       }
     }
   }
-
-  window.addEventListener("scroll", reveal);
 
   return (
     <>
