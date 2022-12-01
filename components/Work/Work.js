@@ -14,6 +14,18 @@ const Work = () => {
     setIsOpen(false);
   };
 
+  const dummyExperience = [
+    {
+      linkWork: "https://buddytotravel.vercel.app/",
+      linkImage: "/images/buddytotravel/buddy.png",
+      title: "Buddy to travel",
+      icon: "/images/buddytotravel/logoBuddy.png",
+      text: "The website gathers who people to find require friends in different places.",
+      skill1: "NextJs",
+      skill2: "Tailwind CSS",
+      skill3: "Firebase",
+    },
+  ];
   return (
     <>
       <section className="containers ">
@@ -44,15 +56,18 @@ const Work = () => {
                 }}
                 className="rounded p-[0.5rem] border-solid border-2 border-sky-500 pl-7 "
               >
-                <h1 className="font-bold">WORK ACTIVITY</h1>
+                <h1 className="font-bold">WORK ACTIVITIES</h1>
               </div>
             </div>
-            <div className="grid md:grid-cols-3 grid-cols-1 p-6 px-8 text-center items-center gap-6 ">
+            <div className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-6 ">
               <div
-                className="w-[300px] h-[250px] ] flex flex-col rounded-xl"
+                className="w-[300px] h-[300px] ] flex flex-col rounded-xl"
                 style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
               >
-                <div onClick={handleOpenModal} className="overflow-hidden cursor-pointer rounded-t-md ">
+                <div
+                  onClick={handleOpenModal}
+                  className="cursor-pointer rounded-t-md "
+                >
                   <Image
                     className="transition duration-[.6s] hover:scale-[1.15] w-full h-full"
                     src="/images/openhouse/Open-house.jpg"
@@ -77,7 +92,7 @@ const Work = () => {
                   </div>
                   <div className="indent-[20px] text-left text-[#a4a1a1] text-[12px]">
                     <p>
-                      ได้นำโปรเจกต์{" "}
+                      Presented{" "}
                       <a
                         className="hover:text-sky-500"
                         href="https://buddytotravel.vercel.app/"
@@ -86,7 +101,7 @@ const Work = () => {
                       >
                         Buddy to tavel
                       </a>{" "}
-                      ไปขึ้นโชว์ในงาน Open house
+                      at Bangkok University open house.
                     </p>
                   </div>
                 </div>
@@ -105,50 +120,63 @@ const Work = () => {
                 <h1 className="font-bold">WORK EXPERIENCE</h1>
               </div>
             </div>
-            <div className="grid md:grid-cols-3 grid-cols-1 p-6 px-8 text-center items-center gap-5 ">
-              <div
-                className="w-[300px] h-[250px] ] flex flex-col rounded-xl"
-                style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
-              >
-                <div className="overflow-hidden cursor-pointer rounded-t-md ">
-                  <a
-                    className="hover:text-sky-500"
-                    href="https://buddytotravel.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <Image
-                      className="transition duration-[.6s] hover:scale-[1.15] w-full h-full"
-                      src="/images/buddytotravel/buddy.png"
-                      width={600}
-                      height={300}
-                      objectFit="cover"
-                      quality={100}
-                      alt="activity"
-                    />
-                  </a>
-                </div>
-                <div className="p-2">
-                  <div className="flex gap-2 font-bold border-l-4 border-sky-500 pl-2 text-left">
-                    <h1>Buddy to travel </h1>
+            <div className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 ">
+              {dummyExperience.map((work, index) => (
+                <div
+                  key={index}
+                  className="w-[300px] h-[300px] flex flex-col rounded-xl"
+                  style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+                >
+                  <div className="cursor-pointer rounded-t-md ">
+                    <a
+                      className="hover:text-sky-500"
+                      href={work.linkWork}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <Image
+                        className="transition duration-[.6s] hover:scale-[1.15] w-full h-full"
+                        src={work.linkImage}
+                        width={600}
+                        height={300}
+                        objectFit="cover"
+                        quality={100}
+                        alt="experience"
+                      />
+                    </a>
+                  </div>
+                  <div className="p-2 ">
+                    <div className="flex gap-2 font-bold border-l-4 border-sky-500 pl-2 text-left">
+                      <h1>{work.title} </h1>
 
-                    <Image
-                      className="transition duration-[.6s] hover:scale-[1.15] w-full h-full"
-                      src="/images/buddytotravel/logoBuddy.png"
-                      width={30}
-                      height={30}
-                      objectFit="cover"
-                      alt="activity"
-                    />
-                  </div>
-                  <div className="indent-[20px] text-left text-[#a4a1a1] text-[12px]">
-                    <p>
-                      เว็บไซต์รวมกลุ่มคนเพื่อหาเพื่อนเที่ยวในสถานที่ต่างๆ
-                      ตามวันและเวลาที่ต้องการ ทำให้เกิดสังคมใหม่ๆ
-                    </p>
+                      <Image
+                        className="transition duration-[.6s] hover:scale-[1.15] w-full h-full"
+                        src={work.icon}
+                        width={30}
+                        height={30}
+                        objectFit="cover"
+                        alt="experience"
+                      />
+                    </div>
+                    <div className="indent-[20px] text-left text-[#a4a1a1] text-[12px]">
+                      <p>{work.text}</p>
+                    </div>
+                    <div className="w-full text-[12px] text-[#35DDE5]">
+                      <span className="flex ">
+                        <div className="rounded-md p-2 ">
+                          <p>{work.skill1}</p>
+                        </div>
+                        <div className=" rounded-md p-2 ">
+                          <p>{work.skill2}</p>
+                        </div>
+                        <div className=" rounded-md p-2 ">
+                          <p>{work.skill3}</p>
+                        </div>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

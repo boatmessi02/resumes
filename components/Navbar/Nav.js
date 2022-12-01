@@ -90,7 +90,7 @@ const Nav = (props) => {
             <Link href="/work">
               <div className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer">
                 <MdWorkspacesOutline color="pink" size={20} />
-                WORK
+                WORKS
               </div>
             </Link>
           </motion.li>

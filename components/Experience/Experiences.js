@@ -35,10 +35,33 @@ const Experiences = () => {
                 <p className="border-l-4 border-sky-500 pl-2">
                   LAB (Motion Detection)
                 </p>
+                <p className="border-l-4 border-white pl-2">{`Back end developer`}</p>
               </span>
+              <div className="w-full text-[12px] ">
+                <span className="flex gap-5 ">
+                  <div
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    className=" w-fit h-[35px] rounded-md p-2 text-[#35DDE5]"
+                  >
+                    <p>Python</p>
+                  </div>
+                  <div
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    className=" w-fit  h-[35px] rounded-md p-2 text-[#35DDE5]"
+                  >
+                    <p>OpenCV</p>
+                  </div>
+                  <div
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    className=" w-fit  h-[35px] rounded-md p-2 text-[#35DDE5]"
+                  >
+                    <p>Tensorflow</p>
+                  </div>
+                </span>
+              </div>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
                 onClick={handleOpenModal}
               >
                 View Motion Detection
@@ -52,10 +75,27 @@ const Experiences = () => {
               <span className="flex flex-col text-left w-full gap-2 px-4 ">
                 <p className="border-l-4 border-sky-500 pl-2">{`It is a game created for internship interview.`}</p>
                 <p className="border-l-4 border-sky-500 pl-2">{`It's a game about random numbers.`}</p>
+                <p className="border-l-4 border-white pl-2">{`Front end developer`}</p>
               </span>
+              <div className="w-full text-[12px] ">
+                <span className="flex gap-5 ">
+                  <div
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    className=" w-fit h-[35px] rounded-md p-2 text-[#35DDE5]"
+                  >
+                    <p>React</p>
+                  </div>
+                  <div
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    className=" w-fit  h-[35px] rounded-md p-2 text-[#35DDE5]"
+                  >
+                    <p>Tailwind Css</p>
+                  </div>
+                </span>
+              </div>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
               >
                 <a
                   href="https://random-game-9kcszqbqr-boatmessi02.vercel.app/"
@@ -79,13 +119,35 @@ const Experiences = () => {
                   {`We are created this project for the benefit of people who love to
                   travel and make some friends.`}
                 </p>
-
                 <p className="border-l-4 border-sky-500 pl-2">{`We have already launched.`}</p>
                 <p className="border-l-4 border-sky-500 pl-2">{`We hope you like this journey.`}</p>
+                <p className="border-l-4 border-white pl-2">{`Front-Back end developer`}</p>
               </span>
+              <div className="w-full text-[12px] ">
+                <span className="flex gap-5 text-[#35DDE5]">
+                  <div
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    className=" w-fit h-[35px] rounded-md p-2 "
+                  >
+                    <p>NextJs</p>
+                  </div>
+                  <div
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    className=" w-fit  h-[35px] rounded-md p-2 "
+                  >
+                    <p>Tailwind CSS</p>
+                  </div>
+                  <div
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    className=" w-fit  h-[35px] rounded-md p-2 "
+                  >
+                    <p>Firebase</p>
+                  </div>
+                </span>
+              </div>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[30px]"
+                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
               >
                 <a
                   href="https://buddytotravel.vercel.app/login"

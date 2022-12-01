@@ -72,7 +72,7 @@ const ModalOpenHouse = (props) => {
     >
       <Box
         sx={style}
-        className="scrollModal flex p-[30px] flex-col w-[380px] md:w-full max-w-[1024px] h-[600px] text-white text-center gap-[3rem] md:gap-[5rem] rounded-lg"
+        className="scrollModal flex p-[30px] flex-col w-[350px] md:w-[1024px] h-[500px] md:h-[600px] text-white text-center gap-[3rem] md:gap-[5rem] rounded-lg"
       >
         <div
           style={{ fontSize: "18px" }}
@@ -85,7 +85,10 @@ const ModalOpenHouse = (props) => {
         <div className="boxSlide">
           <div className="wrapperElements">
             <div className="icon">
-              <FaAngleLeft onClick={handlePrevious} />
+              <FaAngleLeft
+                className="md:block hidden"
+                onClick={handlePrevious}
+              />
             </div>
             <div className="wrapperSlide">
               {sliderList.map((slider, index) => (
@@ -94,10 +97,19 @@ const ModalOpenHouse = (props) => {
                 </div>
               ))}
             </div>
-            <div className="icon">
-              <FaAngleRight onClick={handleNext} />
+            <div className="icon ">
+              <FaAngleRight className="md:block hidden" onClick={handleNext} />
             </div>
           </div>
+        </div>
+        <div className="flex gap-5 absolute bottom-0 right-0 p-[1rem] w-full justify-end border-t-[2px] border-dotted border-[#0B88A6] border-grey">
+          <motion.div
+            whileTap={{ scale: 0.9 }}
+            onClick={props.handleClose}
+            className="flex cursor-pointer w-[100px] h-[35px] justify-center items-center gap-1 text-white bg-[#0B88A6] rounded-[10px] hover:bg-[#3590a7]"
+          >
+            ปิดหน้าต่าง
+          </motion.div>
         </div>
       </Box>
     </Modal>
