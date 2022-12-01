@@ -41,6 +41,24 @@ export default function Home() {
     });
   };
 
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+
   return (
     <>
       <Head>
@@ -59,14 +77,14 @@ export default function Home() {
         />
         <div
           ref={refBtnIntroduce}
-          className={`px-3 py-5 xl:fixed w-full h-fit xl:right-[8rem] 
+          className={` px-3 py-5 xl:fixed w-full h-fit xl:right-[8rem] 
           flex justify-end xl:max-w-[400px] text-white ${
             checkPositionY ? "xl:top-[2rem]" : "top-[5rem]"
           }`}
         >
           <Introduces />
         </div>
-        <section className="containers" ref={refBtnSkill}>
+        <section className="containers reveal" ref={refBtnSkill}>
           <div className="grid grid-cols-1 gap-10 xl:grid-cols-3 ">
             <div className="col-span-2">
               <Skills />
@@ -74,7 +92,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="containers " ref={refBtnExperience}>
+        <section className="containers reveal" ref={refBtnExperience}>
           <div className="grid grid-cols-2 gap-10 xl:grid-cols-3 ">
             <div className="col-span-2">
               <Experiences />
@@ -82,7 +100,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="containers  " ref={refBtnEducation}>
+        <section className="containers  reveal" ref={refBtnEducation}>
           <div className="grid grid-cols-2 gap-10 xl:grid-cols-3 ">
             <div className="col-span-2">
               <Educations />
