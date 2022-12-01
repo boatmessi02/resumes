@@ -22,10 +22,7 @@ const Nav = () => {
 
   return (
     <>
-      <div
-        onClick={handleCloseMenu}
-        className="flex justify-between items-center max-w-[1240px] mx-auto px-5 text-white h-[90px] "
-      >
+      <div className="flex justify-between items-center max-w-[1240px] mx-auto px-5 text-white h-[90px] ">
         <Link href="/">
           <motion.div
             whileHover={{ scale: 1.05 }}
