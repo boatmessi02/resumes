@@ -6,57 +6,27 @@ import Footers from "../components/Footer/Footers";
 import Experiences from "../components/Experience/Experiences";
 import Introduces from "../components/Introduce/Introduces";
 import Skills from "../components/Skill/Skills";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [checkPositionY, setCheckPositionY] = useState(false);
 
   const handleScrollCheck = () => {
     const positionY = window.pageYOffset;
 
-    setScrollPosition(positionY);
     if (positionY > 1100) {
       setCheckPositionY(true);
     } else {
       setCheckPositionY(false);
     }
   };
+
   useEffect(() => {
-    window.addEventListener("scroll", reveal);
     window.addEventListener("scroll", handleScrollCheck);
     return () => {
       window.removeEventListener("scroll", handleScrollCheck);
     };
   }, []);
-
-  const refBtnSkill = useRef();
-  const refBtnIntroduce = useRef();
-  const refBtnExperience = useRef();
-  const refBtnEducation = useRef();
-
-  const handleScroll = (ref) => {
-    window.scrollTo({
-      top: ref.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
 
   return (
     <>
@@ -67,15 +37,9 @@ export default function Home() {
       </Head>
 
       <div className="sections relative w-full">
-        <Nav
-          refBtnIntroduce={refBtnIntroduce}
-          refBtnSkill={refBtnSkill}
-          refBtnExperience={refBtnExperience}
-          refBtnEducation={refBtnEducation}
-          handleScroll={handleScroll}
-        />
+        <Nav />
         <div
-          ref={refBtnIntroduce}
+          name="teerapat"
           className={` px-3 py-5 xl:fixed w-full h-fit xl:right-[8rem] 
           flex justify-end xl:max-w-[400px] text-white ${
             checkPositionY ? "xl:top-[2rem]" : "top-[5rem]"
@@ -83,29 +47,57 @@ export default function Home() {
         >
           <Introduces />
         </div>
-        <section className="containers reveal" ref={refBtnSkill}>
-          <div className="grid grid-cols-1 gap-10 xl:grid-cols-3 ">
-            <div className="col-span-2">
-              <Skills />
+        <motion.div
+          initial={{
+            y: 150,
+            opacity: 0,
+          }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+        >
+          <section name="skill" className="containers">
+            <div className=" grid grid-cols-1 gap-10 xl:grid-cols-3 ">
+              <div className="col-span-2">
+                <Skills />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </motion.div>
 
-        <section className="containers reveal" ref={refBtnExperience}>
-          <div className="grid grid-cols-2 gap-10 xl:grid-cols-3 ">
-            <div className="col-span-2">
-              <Experiences />
+        <motion.div
+          initial={{
+            y: 150,
+            opacity: 0,
+          }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+        >
+          <section name="experience" className="containers">
+            <div className="grid grid-cols-2 gap-10 xl:grid-cols-3 ">
+              <div className="col-span-2">
+                <Experiences />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </motion.div>
 
-        <section className="containers  reveal" ref={refBtnEducation}>
-          <div className="grid grid-cols-2 gap-10 xl:grid-cols-3 ">
-            <div className="col-span-2">
-              <Educations />
+        <motion.div
+          initial={{
+            y: 150,
+            opacity: 0,
+          }}
+          transition={{ duration: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+        >
+          <section name="education" className="containers">
+            <div className="grid grid-cols-2 gap-10 xl:grid-cols-3 ">
+              <div className="col-span-2">
+                <Educations />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </motion.div>
+
         <Footers />
       </div>
     </>

@@ -53,7 +53,7 @@ const Experiences = () => {
                   </div>
                   <div
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-                    className=" w-fit  h-[35px] rounded-md p-2 text-[#35DDE5]"
+                    className=" w-fit h-[35px] rounded-md p-2 text-[#35DDE5]"
                   >
                     <p>Tensorflow</p>
                   </div>
@@ -61,7 +61,7 @@ const Experiences = () => {
               </div>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
+                className="flex items-center w-fit rounded-md p-[1rem] font-bold md:text-[14px] text-[12px] bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
                 onClick={handleOpenModal}
               >
                 View Motion Detection
@@ -95,7 +95,7 @@ const Experiences = () => {
               </div>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
+                className="flex items-center w-fit rounded-md p-[1rem] md:text-[14px] text-[12px] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
               >
                 <a
                   href="https://random-game-9kcszqbqr-boatmessi02.vercel.app/"
@@ -147,7 +147,7 @@ const Experiences = () => {
               </div>
               <motion.div
                 whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
+                className="flex items-center w-fit rounded-md p-[1rem] md:text-[14px] text-[12px] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
               >
                 <a
                   href="https://buddytotravel.vercel.app/login"
