@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import WorkBuddyToTravel from "./WorkBuddyToTravel/WorkBuddyToTravel";
+import WorkBuddy from "./WorkBuddyToTravel/WorkBuddy";
 import WorkOpenHouse from "./WorkOpenHouse/WorkOpenHouse";
 import WorkRandom from "./WorkRandom/WorkRandom";
 
@@ -56,7 +56,7 @@ const Work = () => {
           </div>
           <div className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 ">
             <WorkRandom />
-            <WorkBuddyToTravel />
+            <WorkBuddy />
           </div>
         </div>
       </div>

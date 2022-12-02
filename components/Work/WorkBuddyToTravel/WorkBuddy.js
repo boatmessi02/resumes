@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const WorkBuddyToTravel = () => {
+const WorkBuddy = () => {
   return (
     <>
       <motion.div
@@ -68,4 +68,4 @@ const WorkBuddyToTravel = () => {
   );
 };
 
-export default WorkBuddyToTravel;
+export default WorkBuddy;
