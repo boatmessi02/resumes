@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import WorkBuddy from "./WorkBuddyToTravel/WorkBuddy";
-import WorkOpenHouse from "./WorkOpenHouse/WorkOpenHouse";
+import WorkOpenHouses from "./WorkOpenHouse/WorkOpenHouses";
 import WorkRandom from "./WorkRandom/WorkRandom";
 
 const Work = () => {

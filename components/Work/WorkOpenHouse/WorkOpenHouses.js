@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import ModalOpenHouse from "./openHouse/ModalOpenHouse";
 
-const WorkOpenHouse = () => {
+const WorkOpenHouses = () => {
+    
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -66,4 +67,4 @@ const WorkOpenHouse = () => {
   );
 };
 
-export default WorkOpenHouse;
+export default WorkOpenHouses;
