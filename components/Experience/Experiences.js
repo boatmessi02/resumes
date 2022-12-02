@@ -21,11 +21,11 @@ const Experiences = () => {
         <div className="flex flex-col items-center justify-center text-center gap-[2rem] text-white">
           <span className="flex gap-2 justify-center items-center">
             <GiAgave color="green" size={40} />
-            <h1 className="text-3xl">EXPERIENCE</h1>
+            <h1 className="text-3xl font-bold">EXPERIENCE</h1>
           </span>
           <div className="flex flex-col gap-6 w-full">
             <div className="flex flex-col gap-4 items-center border-2 p-6">
-              <h1 className="font-bold text-xl border-4 border-gray-500 p-2">
+              <h1 className="font-bold text-xl p-2">
                 2021 Smart IOT (Smart School Bus)
               </h1>
               <span className="flex flex-col text-left w-full gap-2 px-4 ">
@@ -60,8 +60,8 @@ const Experiences = () => {
                 </span>
               </div>
               <motion.div
-                whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] font-bold md:text-[14px] text-[12px] bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
+                whileHover={{ scale: 1.1 }}
+                className="button md:text-[14px] text-[12px] cursor-pointer"
                 onClick={handleOpenModal}
               >
                 View Motion Detection
@@ -69,9 +69,7 @@ const Experiences = () => {
             </div>
 
             <div className="flex flex-col gap-4 items-center border-2 p-6">
-              <h1 className="font-bold text-xl border-4 border-gray-500 p-2">
-                2022 Create game random
-              </h1>
+              <h1 className="font-bold text-xl p-2">2022 Create game random</h1>
               <span className="flex flex-col text-left w-full gap-2 px-4 ">
                 <p className="border-l-4 border-sky-500 pl-2">{`It is a game created for internship interview.`}</p>
                 <p className="border-l-4 border-sky-500 pl-2">{`It's a game about random numbers.`}</p>
@@ -94,8 +92,8 @@ const Experiences = () => {
                 </span>
               </div>
               <motion.div
-                whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] md:text-[14px] text-[12px] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
+                whileHover={{ scale: 1.1 }}
+                className="button md:text-[14px] text-[12px] cursor-pointer"
               >
                 <a
                   href="https://random-game-9kcszqbqr-boatmessi02.vercel.app/"
@@ -108,10 +106,9 @@ const Experiences = () => {
             </div>
 
             <div className="flex flex-col gap-4 items-center border-2 p-6">
-              <h1 className="font-bold text-xl border-4 border-gray-500 p-2 ">
+              <h1 className="font-bold text-xl p-2 ">
                 2022 - 2023 Buddy To Travel Project
               </h1>
-              <p className="text-[#35DDE5] font-bold text-center">Present</p>
 
               <span className="flex flex-col w-full text-left gap-2 px-4">
                 <p className="border-l-4 border-sky-500 pl-2">{`Website community.`}</p>
@@ -146,8 +143,8 @@ const Experiences = () => {
                 </span>
               </div>
               <motion.div
-                whileHover={{ scale: 0.9 }}
-                className="flex items-center w-fit rounded-md p-[1rem] md:text-[14px] text-[12px] font-bold bg-[#35DDE5] cursor-pointer hover:bg-[#222] h-[35px]"
+                whileHover={{ scale: 1.1 }}
+                className="button md:text-[14px] text-[12px] cursor-pointer"
               >
                 <a
                   href="https://buddytotravel.vercel.app/login"

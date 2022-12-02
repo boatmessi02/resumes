@@ -37,8 +37,8 @@ const Introduces = () => {
       <div className="flex items-center gap-4">
         <div className="flex w-[100px] ">
           <Image
-            className="rounded-full"
-            src="/images/mrBoat.jpg"
+            className="rounded-full object-cover"
+            src="/images/teerapatTJ.jpg"
             alt="Picture of the author"
             width={500}
             height={500}
@@ -58,7 +58,7 @@ const Introduces = () => {
           </div>
           <motion.div
             whileTap={{ scale: 0.9 }}
-            className="flex bg-[#35DDE5] hover:bg-[#222] rounded-xl w-[100px] h-[50px] items-center justify-center cursor-pointer"
+            className="flex bg-[#35DDE5] hover:bg-transparent border-2  border-white rounded-xl w-[100px] h-[50px] items-center justify-center cursor-pointer"
           >
             <a href="/images/resume.pdf" target="_blank">
               Resume

@@ -74,7 +74,7 @@ const ModalMotion = (props) => {
       <Box
         style={{ padding: "20px" }}
         sx={style}
-        className="scrollModal flex flex-col w-[380px] md:w-full max-w-[1024px]  h-[600px] bg-[#222] text-white text-center gap-[2rem] rounded-lg"
+        className="scrollModal border-2 flex flex-col w-[380px] md:w-full max-w-[1024px]  h-[600px] bg-[#222] text-white text-center gap-[2rem] rounded-lg"
       >
         <div style={{ fontSize: "18px" }}>
           <h1 className="font-bold text-4xl">Motion Detection Work</h1>
@@ -85,8 +85,14 @@ const ModalMotion = (props) => {
               key={index}
               className="font-bold text-2xl flex flex-col gap-5 items-center"
             >
-              <h1 className="border-4 border-sky-500 p-2">{items.title}</h1>
-              <Image src={items.src} alt={index} width={800} height={500} />
+              <h1 className="border-4 border-dotted p-2">{items.title}</h1>
+              <Image
+                className="rounded-md"
+                src={items.src}
+                alt={index}
+                width={800}
+                height={500}
+              />
             </div>
           ))}
           <div className="font-bold text-2xl flex flex-col gap-5 items-center">
@@ -104,7 +110,7 @@ const ModalMotion = (props) => {
           <motion.div
             whileTap={{ scale: 0.9 }}
             onClick={props.handleClose}
-            className="flex cursor-pointer w-[100px] h-[35px] justify-center items-center gap-1 bg-[red] rounded-[10px] hover:bg-[#3590a7]"
+            className="flex cursor-pointer w-[100px] h-[35px] justify-center items-center gap-1 bg-[#2799d1] rounded-[10px] hover:bg-[#3590a7]"
           >
             Close
           </motion.div>

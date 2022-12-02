@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-import { FaHatWizard } from "react-icons/fa";
 import { DiCodeigniter } from "react-icons/di";
 import { GiAgave } from "react-icons/gi";
 import { MdOutlineCastForEducation, MdWorkspacesOutline } from "react-icons/md";
@@ -62,33 +61,38 @@ const Nav = () => {
         >
           <motion.li
             whileHover={{ scale: 1.2 }}
-            className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer"
+            className="flex text-md hover:text-[#35dde5] hover:opacity-80 items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <ScrollLink
               className="flex flex-nowrap gap-2"
               to="teerapat"
               smooth={true}
             >
-              <FaHatWizard color="purple" size={20} />
+              <Image
+                src="/images/teerapatTJ.jpg"
+                height={30}
+                width={30}
+                className="rounded-full object-cover"
+              />
               TEERAPAT
             </ScrollLink>
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2 }}
-            className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer"
+            className="flex text-md items-center hover:text-[#35dde5] hover:opacity-80 gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <ScrollLink
               className="flex flex-nowrap gap-2"
               to="skill"
               smooth={true}
             >
-              <DiCodeigniter color="red" size={20} />
+              <DiCodeigniter color="#F13E09" size={20} />
               SKILL
             </ScrollLink>
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2 }}
-            className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer"
+            className="flex text-md items-center hover:text-[#35dde5] hover:opacity-80 gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <ScrollLink
               className="flex flex-nowrap gap-2"
@@ -102,20 +106,20 @@ const Nav = () => {
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2 }}
-            className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer"
+            className="flex text-md items-center hover:text-[#35dde5] hover:opacity-80 gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <ScrollLink
               className="flex flex-nowrap gap-2"
               to="education"
               smooth={true}
             >
-              <MdOutlineCastForEducation color="blue" size={20} />
+              <MdOutlineCastForEducation color="#264de4" size={20} />
               EDUCATION
             </ScrollLink>
           </motion.li>
           <motion.li whileHover={{ scale: 1.2 }}>
             <Link href="/work">
-              <div className="flex text-md items-center gap-2 justify-center rounded-2xl cursor-pointer">
+              <div className="flex text-md items-center hover:text-[#35dde5] hover:opacity-80 gap-2 justify-center rounded-2xl cursor-pointer">
                 <MdWorkspacesOutline color="pink" size={20} />
                 WORKS
               </div>

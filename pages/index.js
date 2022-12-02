@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Educations from "../components/Education/Educations";
 import Nav from "../components/Navbar/Nav";
 import Footers from "../components/Footer/Footers";
@@ -36,7 +36,7 @@ export default function Home() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <div className="sections relative w-full">
+      <div className="w-full relative ">
         <Nav />
         <div
           name="teerapat"

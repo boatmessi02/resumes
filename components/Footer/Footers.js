@@ -23,15 +23,6 @@ const Footers = () => {
               rel="noreferrer noopener"
             >
               Github
-            </a>{" "}
-            Background Image by{" "}
-            <a
-              className="underline text-[#d7dde4]"
-              href="https://www.freepik.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              fanjianhua / Freepik.
             </a>
           </p>
         </span>
