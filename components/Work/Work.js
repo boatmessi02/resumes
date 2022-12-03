@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import WorkBuddy from "./WorkBuddyToTravel/WorkBuddy";
-import WorkOpenHouses from "./WorkOpenHouse/WorkOpenHouses";
-import WorkRandom from "./WorkRandom/WorkRandom";
+import WorkBuddy from "./WorkExperience/WorkBuddyToTravel/WorkBuddy";
+import WorkOpenHouses from "./WorkActivities/WorkOpenHouse/WorkOpenHouses";
+import WorkRandom from "./WorkExperience/WorkRandom/WorkRandom";
 
 const Work = () => {
   return (
