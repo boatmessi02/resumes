@@ -15,7 +15,6 @@ const WorkOpenHouses = () => {
   };
   return (
     <>
-      {" "}
       <motion.div
         whileHover={{
           scale: 1.05,

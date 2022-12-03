@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Player } from "video-react";
 import "video-react/dist/video-react.css";
+import AwesomeSlider from "react-awesome-slider";
 
 const style = {
   position: "absolute",
@@ -72,29 +73,31 @@ const ModalMotion = (props) => {
       disableAutoFocus
     >
       <Box
-        style={{ padding: "20px" }}
         sx={style}
-        className="scrollModal border-2 flex p-[30px] flex-col w-[350px] md:w-[1024px] h-[500px] md:h-[600px] text-white text-center gap-[3rem] md:gap-[5rem] rounded-lg"
+        className="scrollModal border-2 flex p-[30px] flex-col w-[350px] md:w-[1024px] h-[500px] md:h-[600px] text-white text-center gap-[2rem] md:gap-[5rem] rounded-lg"
       >
-        <div style={{ fontSize: "18px" }}>
-          <h1 className="font-bold text-4xl">Motion Detection Work</h1>
+        <div className="pt-6">
+          <h1 className="font-bold text-3xl">Motion detection work</h1>
         </div>
-        <div className="flex flex-col gap-5">
-          {motionList.map((items, index) => (
-            <div
-              key={index}
-              className="font-bold text-2xl flex flex-col gap-5 items-center"
-            >
-              <h1 className="border-4 border-dotted p-2">{items.title}</h1>
-              <Image
-                className="rounded-md"
-                src={items.src}
-                alt={index}
-                width={800}
-                height={500}
-              />
-            </div>
-          ))}
+        <div className="flex flex-col gap-[5rem] ">
+          <div className="w-[300px] md:w-[800px] h-full m-auto ">
+            <AwesomeSlider animation="cubeAnimation">
+              {motionList.map((items, index) => (
+                <div
+                  key={index}
+                  className="h-full overflow-hidden rounded-md border-solid border-[1px]"
+                >
+                  <Image
+                    src={items.src}
+                    alt={items.title}
+                    width={800}
+                    height={500}
+                  />
+                </div>
+              ))}
+            </AwesomeSlider>
+          </div>
+
           <div className="font-bold text-2xl flex flex-col gap-5 items-center">
             <h1 className="border-4 border-dotted p-2">Video Result Motion</h1>
             <div className="w-[300px] md:w-[800px]">
@@ -106,11 +109,12 @@ const ModalMotion = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex gap-5 justify-end pt-[10px] border-t-[2px] border-dotted border-grey">
+
+        <div className="flex gap-5 justify-end pt-[10px] text-[14px] md:text-[16px] border-t-[2px] border-[#0B88A6] border-dotted ">
           <motion.div
             whileTap={{ scale: 0.9 }}
             onClick={props.handleClose}
-            className="flex cursor-pointer w-[100px] h-[35px] justify-center items-center gap-1 bg-[#2799d1] rounded-[10px] hover:bg-[#3590a7]"
+            className="flex cursor-pointer w-[75px] md:w-[100px] h-[35px] justify-center items-center gap-1 bg-[#2799d1] rounded-[10px] hover:bg-[#3590a7]"
           >
             Close
           </motion.div>
