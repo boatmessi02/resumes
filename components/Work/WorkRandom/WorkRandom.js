@@ -36,7 +36,7 @@ const WorkRandom = () => {
 
             <Image
               className="transition duration-[.6s] hover:scale-[1.15] w-full h-full"
-              src="/images/randomGame/dice.ico"
+              src="/images/randomGame/dice.png"
               width={30}
               height={30}
               objectFit="cover"
