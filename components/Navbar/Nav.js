@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-
 import { DiCodeigniter } from "react-icons/di";
 import { GiAgave } from "react-icons/gi";
 import { MdOutlineCastForEducation, MdWorkspacesOutline } from "react-icons/md";
