@@ -74,7 +74,7 @@ const ModalMotion = (props) => {
       <Box
         style={{ padding: "20px" }}
         sx={style}
-        className="scrollModal border-2 flex flex-col w-[380px] md:w-full max-w-[1024px]  h-[600px] bg-[#222] text-white text-center gap-[2rem] rounded-lg"
+        className="scrollModal border-2 flex p-[30px] flex-col w-[350px] md:w-[1024px] h-[500px] md:h-[600px] text-white text-center gap-[3rem] md:gap-[5rem] rounded-lg"
       >
         <div style={{ fontSize: "18px" }}>
           <h1 className="font-bold text-4xl">Motion Detection Work</h1>
@@ -96,8 +96,8 @@ const ModalMotion = (props) => {
             </div>
           ))}
           <div className="font-bold text-2xl flex flex-col gap-5 items-center">
-            <h1>Video Result Motion</h1>
-            <div className="w-[340px] md:w-[800px]">
+            <h1 className="border-4 border-dotted p-2">Video Result Motion</h1>
+            <div className="w-[300px] md:w-[800px]">
               <Player
                 playsInline
                 poster="/images/motion/motion.jpg"
