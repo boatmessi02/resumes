@@ -72,7 +72,7 @@ const ModalOpenHouse = (props) => {
     >
       <Box
         sx={style}
-        className="scrollModal flex p-[30px] flex-col w-[350px] md:w-[1024px] h-[500px] md:h-[600px] text-white text-center gap-[3rem] md:gap-[5rem] rounded-lg"
+        className="scrollModal border-2 flex p-[30px] flex-col w-[350px] md:w-[1024px] h-[500px] md:h-[600px] text-white text-center gap-[3rem] md:gap-[5rem] rounded-lg"
       >
         <div
           style={{ fontSize: "18px" }}

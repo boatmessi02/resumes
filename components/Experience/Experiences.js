@@ -35,7 +35,7 @@ const Experiences = () => {
                 <p className="border-l-4 border-sky-500 pl-2">
                   LAB (Motion Detection)
                 </p>
-                <p className="border-l-4 border-white pl-2">{`Back end developer`}</p>
+                <p className="border-l-4 pl-2">{`Back end developer`}</p>
               </span>
               <div className="w-full text-[12px] ">
                 <span className="flex gap-5 ">
@@ -73,7 +73,7 @@ const Experiences = () => {
               <span className="flex flex-col text-left w-full gap-2 px-4 ">
                 <p className="border-l-4 border-sky-500 pl-2">{`It is a job prepared for an internship interview.`}</p>
                 <p className="border-l-4 border-sky-500 pl-2">{`Random number game.`}</p>
-                <p className="border-l-4 border-white pl-2">{`Front end developer`}</p>
+                <p className="border-l-4 pl-2">{`Front end developer`}</p>
               </span>
               <div className="w-full text-[12px] ">
                 <span className="flex gap-5 ">
@@ -117,7 +117,7 @@ const Experiences = () => {
                   who love to travel and who want to make some friends.`}
                 </p>
                 <p className="border-l-4 border-sky-500 pl-2">{`We have already launched.`}</p>
-                <p className="border-l-4 border-white pl-2">{`Front-Back end developer`}</p>
+                <p className="border-l-4 pl-2">{`Front-Back end developer`}</p>
               </span>
               <div className="w-full text-[12px] ">
                 <span className="flex gap-5 text-[#35DDE5]">
