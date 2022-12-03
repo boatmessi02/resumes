@@ -69,10 +69,10 @@ const Experiences = () => {
             </div>
 
             <div className="flex flex-col gap-4 items-center border-2 p-6">
-              <h1 className="font-bold text-xl p-2">2022 Create game random</h1>
+              <h1 className="font-bold text-xl p-2">2022 Random game </h1>
               <span className="flex flex-col text-left w-full gap-2 px-4 ">
-                <p className="border-l-4 border-sky-500 pl-2">{`It is a game created for internship interview.`}</p>
-                <p className="border-l-4 border-sky-500 pl-2">{`It's a game about random numbers.`}</p>
+                <p className="border-l-4 border-sky-500 pl-2">{`It is a job prepared for an internship interview.`}</p>
+                <p className="border-l-4 border-sky-500 pl-2">{`Random number game.`}</p>
                 <p className="border-l-4 border-white pl-2">{`Front end developer`}</p>
               </span>
               <div className="w-full text-[12px] ">
@@ -113,11 +113,10 @@ const Experiences = () => {
               <span className="flex flex-col w-full text-left gap-2 px-4">
                 <p className="border-l-4 border-sky-500 pl-2">{`Website community.`}</p>
                 <p className="border-l-4 border-sky-500 pl-2">
-                  {`We are created this project for the benefit of people who love to
-                  travel and make some friends.`}
+                  {`We're created this project for the benefit of people 
+                  who love to travel and who want to make some friends.`}
                 </p>
                 <p className="border-l-4 border-sky-500 pl-2">{`We have already launched.`}</p>
-                <p className="border-l-4 border-sky-500 pl-2">{`We hope you like this journey.`}</p>
                 <p className="border-l-4 border-white pl-2">{`Front-Back end developer`}</p>
               </span>
               <div className="w-full text-[12px] ">
