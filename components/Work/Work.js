@@ -40,7 +40,7 @@ const Work = () => {
             </div>
           </div>
           <div className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-6 ">
-            <WorkOpenHouse />
+            <WorkOpenHouses />
           </div>
           <div className="hover:bg-[#222] ">
             <div
