@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+
 import { DiCodeigniter } from "react-icons/di";
 import { GiAgave } from "react-icons/gi";
 import { MdOutlineCastForEducation, MdWorkspacesOutline } from "react-icons/md";
@@ -20,17 +21,18 @@ const Nav = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center max-w-[1240px] mx-auto px-5 text-white h-[90px] ">
+      <div className="flex justify-between items-center max-w-[1240px] mx-auto px-5 text-white h-[100px] ">
         <Link href="/">
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex rounded-full items-center gap-2 justify-between cursor-pointer"
           >
             <Image
-              src="/images/logo.png"
+              className="rotate"
+              src="/images/logoT.png"
               alt="Picture of the author"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
             />
             <p className="textLogo">TEERAPATJ</p>
           </motion.div>

@@ -14,13 +14,14 @@ const Work = () => {
           <Link href="/">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex rounded-full items-center gap-2 cursor-pointer"
+              className="flex rounded-full items-center gap-1 cursor-pointer"
             >
               <Image
-                src="/images/logo.png"
+                className="rotate"
+                src="/images/logoT.png"
                 alt="Picture of the author"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
               />
               <p className="textLogo">TEERAPATJ</p>
             </motion.div>
