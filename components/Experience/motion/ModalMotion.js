@@ -79,19 +79,18 @@ const ModalMotion = (props) => {
         <div className="pt-6">
           <h1 className="font-bold text-3xl">Motion detection work</h1>
         </div>
-        <div className="flex flex-col gap-[5rem] ">
-          <div className="w-[300px] md:w-[800px] h-full m-auto ">
+        <div className="flex flex-col gap-[5rem] items-center justify-center">
+          <div className="w-[300px] md:w-[700px] h-full m-auto ">
             <AwesomeSlider animation="cubeAnimation">
               {motionList.map((items, index) => (
                 <div
                   key={index}
-                  className="h-full overflow-hidden rounded-md border-solid border-[1px]"
+                  className="h-full w-full overflow-hidden  rounded-md border-solid border-[1px]"
                 >
-                  <Image
+                  <img
                     src={items.src}
                     alt={items.title}
-                    width={800}
-                    height={500}
+                    className='w-full h-full'
                   />
                 </div>
               ))}
