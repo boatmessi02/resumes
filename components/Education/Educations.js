@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineCastForEducation, MdOutlineGrade } from "react-icons/md";
 import { SiWolframmathematica } from "react-icons/si";
 import { AiFillCode } from "react-icons/ai";
+import { TbActivityHeartbeat } from "react-icons/tb";
 const Educations = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const Educations = () => {
       >
         <div className="flex flex-col items-center justify-center text-center gap-5 text-white">
           <span className="flex gap-2 justify-center items-center">
-            <MdOutlineCastForEducation color="#264de4" size={40} />
+            <TbActivityHeartbeat color="#35dde5" size={40} />
             <h1 className="text-3xl font-bold">EDUCATION</h1>
           </span>
 

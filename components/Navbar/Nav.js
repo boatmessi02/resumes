@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-
-import { DiCodeigniter } from "react-icons/di";
-import { GiAgave } from "react-icons/gi";
-import { MdOutlineCastForEducation, MdWorkspacesOutline } from "react-icons/md";
+import { TbActivityHeartbeat } from "react-icons/tb";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -34,7 +31,10 @@ const Nav = () => {
               width={100}
               height={100}
             />
-            <p className="textLogo">TEERAPATJ</p>
+            <span className="content">
+              <h2>TEERAPATJ</h2>
+              <h2 className="font-bold">TEERAPATJ</h2>
+            </span>
           </motion.div>
         </Link>
 
@@ -57,12 +57,12 @@ const Nav = () => {
           className={
             !menu
               ? "hidden lg:flex font-bold gap-10"
-              : "menuResponsive flex flex-col fixed top-[70px] right-2 p-7 gap-4 items-start bg-[#222] z-[99]"
+              : "menuResponsive flex flex-col fixed top-[70px] right-5 p-7 gap-4 items-start bg-[#222] z-[99]"
           }
         >
           <motion.li
-            whileHover={{ scale: 1.2 }}
-            className="flex text-md hover:text-[#35dde5] hover:opacity-80 items-center gap-2 justify-center rounded-2xl cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            className="flex text-md font-bold hover:text-[#35dde5] hover:duration-300 border-b p-2 hover:opacity-80 items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <ScrollLink
               className="flex flex-nowrap gap-2"
@@ -79,21 +79,21 @@ const Nav = () => {
             </ScrollLink>
           </motion.li>
           <motion.li
-            whileHover={{ scale: 1.2 }}
-            className="flex text-md items-center hover:text-[#35dde5] hover:opacity-80 gap-2 justify-center rounded-2xl cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            className="flex text-md font-bold hover:text-[#35dde5] hover:duration-300 border-b p-2 hover:opacity-80 items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <ScrollLink
               className="flex flex-nowrap gap-2"
               to="skill"
               smooth={true}
             >
-              <DiCodeigniter color="#F13E09" size={20} />
+              <TbActivityHeartbeat color="#EC9A23" size={20} />
               SKILL
             </ScrollLink>
           </motion.li>
           <motion.li
-            whileHover={{ scale: 1.2 }}
-            className="flex text-md items-center hover:text-[#35dde5] hover:opacity-80 gap-2 justify-center rounded-2xl cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            className="flex text-md font-bold hover:text-[#35dde5] hover:duration-300 border-b p-2 hover:opacity-80 items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <ScrollLink
               className="flex flex-nowrap gap-2"
@@ -101,29 +101,32 @@ const Nav = () => {
               smooth={true}
               offset={-150}
             >
-              <GiAgave color="green" size={20} />
+              <TbActivityHeartbeat color="#B1EB6F" size={20} />
               EXPERIENCE
             </ScrollLink>
           </motion.li>
           <motion.li
-            whileHover={{ scale: 1.2 }}
-            className="flex text-md items-center hover:text-[#35dde5] hover:opacity-80 gap-2 justify-center rounded-2xl cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            className="flex text-md font-bold hover:text-[#35dde5] hover:duration-300 border-b p-2 hover:opacity-80 items-center gap-2 justify-center rounded-2xl cursor-pointer"
           >
             <ScrollLink
               className="flex flex-nowrap gap-2"
               to="education"
               smooth={true}
             >
-              <MdOutlineCastForEducation color="#264de4" size={20} />
+              <TbActivityHeartbeat color="#35dde5" size={20} />
               EDUCATION
             </ScrollLink>
           </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }}>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            className="flex text-md font-bold hover:text-[#35dde5] hover:duration-300 border-b p-2 hover:opacity-80 items-center gap-2 justify-center rounded-2xl cursor-pointer"
+          >
             <Link href="/work">
-              <div className="flex text-md items-center hover:text-[#35dde5] hover:opacity-80 gap-2 justify-center rounded-2xl cursor-pointer">
-                <MdWorkspacesOutline color="pink" size={20} />
+              <span className="flex gap-2 items-center jus">
+                <TbActivityHeartbeat color="pink" size={20} />
                 WORKS
-              </div>
+              </span>
             </Link>
           </motion.li>
         </ul>

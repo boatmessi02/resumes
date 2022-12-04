@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { GiAgave } from "react-icons/gi";
 import ModalMotion from "./motion/ModalMotion";
+import { TbActivityHeartbeat } from "react-icons/tb";
 
 const Experiences = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const Experiences = () => {
       >
         <div className="flex flex-col items-center justify-center text-center gap-[2rem] text-white">
           <span className="flex gap-2 justify-center items-center">
-            <GiAgave color="green" size={40} />
+            <TbActivityHeartbeat color="#B1EB6F" size={40} />
             <h1 className="text-3xl font-bold">EXPERIENCE</h1>
           </span>
           <div className="flex flex-col gap-6 w-full">

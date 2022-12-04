@@ -40,9 +40,9 @@ export default function Home() {
         <Nav />
         <div
           name="teerapat"
-          className={` px-3 py-5 xl:fixed w-full h-fit xl:right-[8rem] 
+          className={`px-3 py-12 xl:fixed w-full h-fit xl:right-[8rem] 
           flex justify-end xl:max-w-[400px] text-white ${
-            checkPositionY ? "xl:top-[2rem]" : "top-[5rem]"
+            checkPositionY ? "xl:top-[4rem]" : "top-[5rem]"
           }`}
         >
           <Introduces />

@@ -11,9 +11,12 @@ import {
   SiCanva,
 } from "react-icons/si";
 import { AiOutlineAntDesign, AiFillHtml5 } from "react-icons/ai";
-import { DiCodeigniter } from "react-icons/di";
 import { IoLogoCss3, IoLogoNodejs, IoLogoPython } from "react-icons/io";
-import { TbBrandJavascript, TbLetterS } from "react-icons/tb";
+import {
+  TbBrandJavascript,
+  TbLetterS,
+  TbActivityHeartbeat,
+} from "react-icons/tb";
 import { GrReactjs } from "react-icons/gr";
 import { FiFigma } from "react-icons/fi";
 import { motion } from "framer-motion";
@@ -27,7 +30,7 @@ const Skills = () => {
       >
         <div className="flex flex-col items-center justify-center text-center gap-[1rem] text-white">
           <span className="flex gap-2 justify-center items-center">
-            <DiCodeigniter color="#F13E09" size={40} />
+            <TbActivityHeartbeat color="#EC9A23" size={40} />
             <h1 className="text-3xl font-bold">SKILL</h1>
           </span>
 
