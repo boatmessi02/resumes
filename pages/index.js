@@ -87,7 +87,7 @@ export default function Home() {
             y: 150,
             opacity: 0,
           }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           whileInView={{ y: 0, opacity: 1 }}
         >
           <section name="education" className="containers">

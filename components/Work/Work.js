@@ -111,15 +111,7 @@ const Work = () => {
               </ScrollLink>
             </div>
           </div>
-          <motion.div
-            initial={{
-              y: 150,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            className="w-full h-full flex flex-col gap-6"
-          >
+          <div className="w-full h-full flex flex-col gap-6">
             <div>
               <div
                 name="activity"
@@ -131,19 +123,20 @@ const Work = () => {
               >
                 <h1 className="font-bold">WORK ACTIVITIES</h1>
               </div>
-              <div className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 mt-10 ">
+              <motion.div
+                initial={{
+                  y: 150,
+                  opacity: 0,
+                }}
+                transition={{ duration: 1 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 mt-10 "
+              >
                 <WorkOpenHouses />
-              </div>
+              </motion.div>
             </div>
 
-            <motion.div
-              initial={{
-                y: 150,
-                opacity: 0,
-              }}
-              transition={{ duration: 1 }}
-              whileInView={{ y: 0, opacity: 1 }}
-            >
+            <div>
               <div
                 name="experience"
                 style={{
@@ -154,20 +147,21 @@ const Work = () => {
               >
                 <h1 className="font-bold">WORK EXPERIENCE</h1>
               </div>
-              <div className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 mt-10">
+              <motion.div
+                initial={{
+                  y: 150,
+                  opacity: 0,
+                }}
+                transition={{ duration: 1 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 mt-10"
+              >
                 <WorkRandom />
                 <WorkBuddy />
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
 
-            <motion.div
-              initial={{
-                y: 150,
-                opacity: 0,
-              }}
-              transition={{ duration: 1 }}
-              whileInView={{ y: 0, opacity: 1 }}
-            >
+            <div>
               <div
                 name="certificate"
                 style={{
@@ -178,7 +172,15 @@ const Work = () => {
               >
                 <h1 className="font-bold">CERTIFICATE</h1>
               </div>
-              <div className="grid md:grid-cols-2 grid-cols-1 p-6 text-center items-center gap-10 mt-10">
+              <motion.div
+                initial={{
+                  y: 150,
+                  opacity: 0,
+                }}
+                transition={{ duration: 1 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                className="grid md:grid-cols-2 grid-cols-1 p-6 text-center items-center gap-10 mt-10"
+              >
                 <Image
                   className="object-contain"
                   src="/images/certification/Blockchain.png"
@@ -193,9 +195,9 @@ const Work = () => {
                   width={500}
                   height={500}
                 />
-              </div>
-            </motion.div>
-          </motion.div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
     </>

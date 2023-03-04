@@ -104,7 +104,7 @@ const Introduces = () => {
               <BsInstagram className="hover:text-[#FA383E]" size={30} />
             </a>
             <a
-              href="https://twitter.com/BoatMess"
+              href="https://twitter.com/NDespair7"
               target="_blank"
               rel="noreferrer noopener"
             >
