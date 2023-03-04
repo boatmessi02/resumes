@@ -123,17 +123,9 @@ const Work = () => {
               >
                 <h1 className="font-bold">WORK ACTIVITIES</h1>
               </div>
-              <motion.div
-                initial={{
-                  y: 150,
-                  opacity: 0,
-                }}
-                transition={{ duration: 1 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 mt-10 "
-              >
+              <div className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 mt-10 ">
                 <WorkOpenHouses />
-              </motion.div>
+              </div>
             </div>
 
             <div>
