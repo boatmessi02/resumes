@@ -1,5 +1,5 @@
 import React from "react";
-import { BsCodeSlash } from "react-icons/bs";
+import { BsCodeSlash, BsWordpress } from "react-icons/bs";
 import {
   SiCoderwall,
   SiRedux,
@@ -9,6 +9,7 @@ import {
   SiFirebase,
   SiAdobephotoshop,
   SiCanva,
+  SiTypescript,
 } from "react-icons/si";
 import { AiOutlineAntDesign, AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3, IoLogoNodejs, IoLogoPython } from "react-icons/io";
@@ -19,6 +20,7 @@ import {
 } from "react-icons/tb";
 import { GrReactjs } from "react-icons/gr";
 import { FiFigma } from "react-icons/fi";
+import { FaAngular } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Skills = () => {
@@ -34,16 +36,17 @@ const Skills = () => {
             <h1 className="text-3xl font-bold">SKILL</h1>
           </span>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-2 md:gap-10 ">
-            <div className="flex gap-5 items-center">
-              <span className="flex flex-col gap-2 mb-[320px] items-center md:flex w-[120px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-2 md:gap-[2rem] p-[2.5rem]">
+            {/* Front-END */}
+            <div className="flex gap-2 items-start">
+              <span className="flex flex-col gap-2 items-center md:flex w-[120px] iconSkill">
                 <BsCodeSlash color="#ffff" size={45} />
                 <h1 className="font-bold text-[18px] ">Frontend Dev</h1>
               </span>
 
               <motion.div
                 whileHover={{
-                  scale: 1.1,
+                  scale: 0.99,
                 }}
                 className="flex flex-col w-[170px] text-left text-[#d7dde4] gap-4 border-l-2 border-[#35DDE5] pl-2"
               >
@@ -56,13 +59,20 @@ const Skills = () => {
                   <p> CSS</p>
                 </span>
                 <span className="flex gap-2 items-center">
+                  <GrReactjs color="#61DBFB" size={30} />
+                  <p> React.js</p>
+                </span>
+                <span className="flex gap-2 items-center">
+                  <FaAngular color="#C3002F" size={30} />
+                  <p> AngularJS </p>
+                </span>
+                <span className="flex gap-2 items-center">
                   <TbBrandJavascript color="#F0DB4F" size={30} />
                   <p>JavaScript(ES6)</p>
                 </span>
-
                 <span className="flex gap-2 items-center">
-                  <GrReactjs color="#61DBFB" size={30} />
-                  <p> React.js</p>
+                  <SiTypescript color="#007acc" size={30} />
+                  <p> TypeScript </p>
                 </span>
                 <span className="flex gap-2 items-center">
                   <SiRedux color="#764abc" size={30} />
@@ -79,14 +89,15 @@ const Skills = () => {
               </motion.div>
             </div>
 
-            <div className="flex gap-5 items-center">
-              <span className="flex flex-col gap-2 mb-[220px] items-center md:flex w-[120px]">
+            {/* Back-END */}
+            <div className="flex gap-2 items-start">
+              <span className="flex flex-col gap-2  items-center md:flex w-[120px] iconSkill">
                 <SiCoderwall color="#ffff" size={40} />
                 <h1 className="font-bold text-[18px]  ">Backend Dev</h1>
               </span>
               <motion.div
                 whileHover={{
-                  scale: 1.1,
+                  scale: 0.99,
                 }}
                 className="flex flex-col w-[170px] text-left text-[#d7dde4] gap-4 border-l-2 border-[#35DDE5] pl-2"
               >
@@ -112,17 +123,19 @@ const Skills = () => {
                 </span>
               </motion.div>
             </div>
-            <div className="flex gap-5 items-center">
-              <span className="flex flex-col mb-[130px] gap-2 items-center md:flex w-[120px]">
+
+            {/* Designer */}
+            <div className="flex gap-2 items-start">
+              <span className="flex flex-col gap-2 items-center md:flex w-[120px] iconSkill">
                 <AiOutlineAntDesign color="#ffff" size={45} />
                 <h1 className="font-bold text-[18px] ">Designer</h1>
               </span>
 
               <motion.div
                 whileHover={{
-                  scale: 1.1,
+                  scale: 0.99,
                 }}
-                className="flex flex-col w-[170px] text-left text-[#d7dde4] mt-6 gap-4 border-l-2 border-[#35DDE5] pl-2"
+                className="flex flex-col w-[170px] text-left text-[#d7dde4] gap-4 border-l-2 border-[#35DDE5] pl-2"
               >
                 <span className="flex gap-2 items-center">
                   <SiAdobephotoshop color="#0A287E" size={30} />
@@ -135,6 +148,10 @@ const Skills = () => {
                 <span className="flex gap-2 items-center">
                   <SiCanva color="#61DBFB" size={30} />
                   <p> Canva</p>
+                </span>
+                <span className="flex gap-2 items-center">
+                  <BsWordpress color="#2992c2" size={30} />
+                  <p> Wordpress</p>
                 </span>
               </motion.div>
             </div>
