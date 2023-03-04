@@ -111,15 +111,16 @@ const Work = () => {
               </ScrollLink>
             </div>
           </div>
-          <div className="w-full h-full flex flex-col gap-6">
-            <motion.div
-              initial={{
-                y: 150,
-                opacity: 0,
-              }}
-              transition={{ duration: 1 }}
-              whileInView={{ y: 0, opacity: 1 }}
-            >
+          <motion.div
+            initial={{
+              y: 150,
+              opacity: 0,
+            }}
+            transition={{ duration: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            className="w-full h-full flex flex-col gap-6"
+          >
+            <div>
               <div
                 name="activity"
                 style={{
@@ -133,7 +134,7 @@ const Work = () => {
               <div className="grid md:grid-cols-3 grid-cols-1 p-6 text-center items-center gap-5 mt-10 ">
                 <WorkOpenHouses />
               </div>
-            </motion.div>
+            </div>
 
             <motion.div
               initial={{
@@ -194,7 +195,7 @@ const Work = () => {
                 />
               </div>
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
