@@ -35,7 +35,7 @@ const Educations = () => {
               </span>
             </div>
             <div className="flex flex-col gap-4 items-center">
-              <h1 className="font-bold text-xl">2018 - 2023</h1>
+              <h1 className="font-bold text-xl">2019 - 2023</h1>
               <span className="flex flex-col w-full text-left">
                 <p className="text-[#35DDE5] font-bold text-center">Present</p>
                 <p className="border-l-4 border-sky-500 pl-2">
