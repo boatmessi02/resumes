@@ -4,7 +4,7 @@ import Modal from "@mui/material/Modal";
 import { motion } from "framer-motion";
 import ProjectManagement from "./ProjectManagement";
 import Calendar from "./Calendar";
-import Employee from "./employee";
+import Employee from "./Employee";
 
 const style = {
   position: "absolute",
