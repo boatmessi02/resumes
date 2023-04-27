@@ -17,7 +17,7 @@ const SmartIot = (props) => {
         <p className="border-l-4 pl-2">{`Back end developer`}</p>
       </span>
       <div className="w-full text-[12px] ">
-        <span className="flex gap-5 ">
+        <span className="flex gap-5 flex-wrap">
           <div
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
             className=" w-fit h-[35px] rounded-md p-2 text-[#35DDE5]"
