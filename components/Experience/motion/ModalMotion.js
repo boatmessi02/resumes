@@ -2,7 +2,6 @@ import React from "react";
 import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Player } from "video-react";
 import "video-react/dist/video-react.css";
 import AwesomeSlider from "react-awesome-slider";
@@ -74,7 +73,7 @@ const ModalMotion = (props) => {
     >
       <Box
         sx={style}
-        className="scrollModal border-2 flex p-[30px] flex-col w-[350px] md:w-[1024px] h-[500px] md:h-[600px] text-white text-center gap-[2rem] md:gap-[5rem] rounded-lg"
+        className="scrollModal border-2 flex p-[30px] flex-col w-[350px] md:w-[1024px] h-[500px] md:h-[600px] text-white text-center gap-[2rem] md:gap-[4rem] rounded-lg"
       >
         <div className="pt-6">
           <h1 className="font-bold text-3xl">Motion detection work</h1>

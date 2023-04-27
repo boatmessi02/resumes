@@ -5,6 +5,7 @@ import Image from "next/image";
 import WorkBuddy from "./WorkExperience/WorkBuddyToTravel/WorkBuddy";
 import WorkOpenHouses from "./WorkActivities/WorkOpenHouse/WorkOpenHouses";
 import WorkRandom from "./WorkExperience/WorkRandom/WorkRandom";
+import WorkExvention from "./WorkExperience/WorkExvention/WorkExvention";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
 import { TbActivityHeartbeat } from "react-icons/tb";
@@ -41,6 +42,8 @@ const Work = () => {
                 </span>
               </motion.div>
             </Link>
+
+            {/* menuResponsive */}
             <div className="lg:hidden cursor-pointer p-4 fixed top-[50px] right-0 ">
               {!menu ? (
                 <AiOutlineMenu
@@ -56,6 +59,8 @@ const Work = () => {
                 />
               )}
             </div>
+
+            {/* HeaderScrollLink */}
             <div
               className={
                 !menu
@@ -111,6 +116,8 @@ const Work = () => {
               </ScrollLink>
             </div>
           </div>
+
+          {/* Work activity */}
           <div className="w-full h-full flex flex-col gap-6">
             <div>
               <div
@@ -128,6 +135,7 @@ const Work = () => {
               </div>
             </div>
 
+            {/* Work experience */}
             <div>
               <div
                 name="experience"
@@ -150,9 +158,11 @@ const Work = () => {
               >
                 <WorkRandom />
                 <WorkBuddy />
+                <WorkExvention/>
               </motion.div>
             </div>
 
+            {/* CERTIFICATE */}
             <div>
               <div
                 name="certificate"

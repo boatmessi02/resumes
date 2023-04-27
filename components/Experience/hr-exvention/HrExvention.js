@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import ModalHr from "./ModalHr";
 
 const HrExvention = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
   return (
     <>
       <h1 className="font-bold text-xl p-2 ">
@@ -17,6 +27,9 @@ const HrExvention = () => {
         </p>
         <p className="border-l-4 border-sky-500 pl-2">
           {`Refactor code for easier revisions.`}
+        </p>
+        <p className="border-l-4 border-sky-500 pl-2">
+          {`Connect api by postman`}
         </p>
 
         <p className="border-l-4 pl-2">{`Front-end developer`}</p>
@@ -41,8 +54,22 @@ const HrExvention = () => {
           >
             <p>TypeScript</p>
           </div>
+          <div
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+            className=" w-fit  h-[35px] rounded-md p-2 "
+          >
+            <p>Postman</p>
+          </div>
         </span>
       </div>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        className="button md:text-[14px] text-[12px] cursor-pointer"
+        onClick={handleOpenModal}
+      >
+        View Hr Exvention
+      </motion.div>
+      <ModalHr handleClose={handleClose} isOpen={isOpen} />
     </>
   );
 };
