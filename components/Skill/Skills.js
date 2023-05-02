@@ -71,10 +71,6 @@ const Skills = () => {
                   <p>JavaScript(ES6)</p>
                 </span>
                 <span className="flex gap-2 items-center">
-                  <SiTypescript color="#007acc" size={30} />
-                  <p> TypeScript </p>
-                </span>
-                <span className="flex gap-2 items-center">
                   <SiRedux color="#764abc" size={30} />
                   <p> Redux</p>
                 </span>
@@ -108,6 +104,10 @@ const Skills = () => {
                 <span className="flex gap-2 items-center">
                   <SiNextdotjs color="black" size={30} />
                   <p> Next.js</p>
+                </span>
+                <span className="flex gap-2 items-center">
+                  <SiTypescript color="#007acc" size={30} />
+                  <p> TypeScript </p>
                 </span>
                 <span className="flex gap-2 items-center">
                   <SiMysql color="#F29111" size={30} />
