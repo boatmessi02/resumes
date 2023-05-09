@@ -36,7 +36,7 @@ const Skills = () => {
             <h1 className="text-3xl font-bold">SKILL</h1>
           </span>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-2 md:gap-[2rem] p-[2.5rem]">
+          <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-[1.5rem] md:gap-[2rem] p-[2.5rem]">
             {/* Front-END */}
             <div className="flex gap-2 items-start">
               <span className="flex flex-col gap-2 items-center md:flex w-[120px] iconSkill">

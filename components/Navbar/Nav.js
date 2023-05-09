@@ -38,7 +38,7 @@ const Nav = () => {
           </motion.div>
         </Link>
 
-        <div className="lg:hidden cursor-pointer p-4 fixed top-[10px] right-0 ">
+        <div className="lg:hidden cursor-pointer p-4 fixed top-[10px] right-0 z-[99]">
           {!menu ? (
             <AiOutlineMenu
               onClick={handleOpenMenu}
