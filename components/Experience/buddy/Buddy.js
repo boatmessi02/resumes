@@ -9,11 +9,13 @@ const Buddy = () => {
       </h1>
       <span className="flex flex-col w-full text-left gap-2 px-4">
         <p className="border-l-4 border-sky-500 pl-2">{`Create an admin system to manage user information.`}</p>
+        <p className="border-l-4 border-sky-500 pl-2">{`Design web application by Figma.`}</p>
         <p className="border-l-4 border-sky-500 pl-2">
           {`Database design (ER-Diagram)`}
         </p>
+        <p className="border-l-4 border-sky-500 pl-2">{`Connect database with firebase by use Nodejs.`}</p>
         <p className="border-l-4 border-sky-500 pl-2">{`Able to handle function group chat that problem to success.`}</p>
-        <p className="border-l-4 border-sky-500 pl-2">{`Completed work and I got grade A`}</p>
+
         <p className="border-l-4 pl-2">{`Front-Back end developer`}</p>
       </span>
       <div className="w-full text-[12px] ">
@@ -29,6 +31,12 @@ const Buddy = () => {
             className=" w-fit  h-[35px] rounded-md p-2 "
           >
             <p>Tailwind CSS</p>
+          </div>
+          <div
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+            className=" w-fit  h-[35px] rounded-md p-2 "
+          >
+            <p>Nodejs</p>
           </div>
           <div
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}

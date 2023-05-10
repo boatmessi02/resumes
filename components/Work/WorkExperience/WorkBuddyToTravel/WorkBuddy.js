@@ -58,6 +58,9 @@ const WorkBuddy = () => {
                 <p>Tailwind CSS</p>
               </span>
               <span className=" rounded-md p-2 ">
+                <p>Nodejs</p>
+              </span>
+              <span className=" rounded-md p-2 ">
                 <p>Firebase</p>
               </span>
             </div>
